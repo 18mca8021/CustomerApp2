@@ -1,8 +1,7 @@
 import * as React from 'react';
-import { View, Image, StyleSheet, Text, TextInput,TouchableOpacity,SafeAreaView,ScrollView} from 'react-native';
-import Date from './Date';
+import { View, Image, StyleSheet, Text, TouchableOpacity,SafeAreaView,} from 'react-native';
 
-const Screen11 = ({navigation}) => {
+const Screen10 = ({navigation}) => {
 
     const Separator = () => (
         <View style={styles.separator} />
@@ -12,46 +11,46 @@ const Screen11 = ({navigation}) => {
         <>
         <SafeAreaView >
         <View>
-          <View style={{backgroundColor:'#000000'}}>
+          <View style={styles.bg1}>
             <Image style={styles.direct} source={require('../images/back.png')} onPress={() => navigation.navigate('Screen9')}/>
-            <Text style={{color:'white',textTransform:'capitalize',fontWeight:'bold',fontSize:20,position:'absolute',alignSelf:'center',margin:20,paddingEnd:10,top:-13}}> Payment Method </Text>
+            <Text style={styles.txt1}> Payment Method </Text>
             <Separator/>
             </View>
-            <View style={{backgroundColor:'#000000'}}>
+            <View style={styles.bg1}>
             <SafeAreaView  style={styles.boundary}>
               <Separator/>
               <Separator/>
-        <View style={{backgroundColor:'#ffffff'}}>
+        <View style={styles.bg2}>
           <View>
-          <Text style={{ color: 'black', textTransform: 'none', fontSize: 18, fontWeight: '500', position: 'absolute', margin: 10, paddingStart: 95, top: 25 }}>Pay with PayPal</Text>
-          <Image style={{alignSelf:'flex-start', margin: 10,height:40,width:40,left:35,top:17}} source={require('../images/paypalogo.png')}/>
-          <View style={{height:80,width:295,borderWidth:1,borderColor:'grey',borderRadius:15,margin:3,marginStart:30,bottom:55}}></View>
-          <Image style={{alignSelf:'flex-end', margin: 10,height:30,width:30,bottom:125,right:40}} source={require('../images/darkradiobutton.png')}/>
+          <Text style={styles.txt2}>Pay with PayPal</Text>
+          <Image style={styles.img1} source={require('../images/paypalogo.png')}/>
+          <View style={styles.view1}></View>
+          <Image style={styles.img2} source={require('../images/darkradiobutton.png')}/>
 
-          <Text style={{ color: 'black', textTransform: 'none', fontSize: 18, fontWeight: '500', position: 'absolute', margin: 10, paddingStart: 95, top: 125 }}>Pay with Cash</Text>
-          <Image style={{alignSelf:'flex-start', margin: 10,height:40,width:40,left:35,bottom:80}} source={require('../images/cashlogo.png')}/>
-          <View style={{height:80,width:295,borderWidth:1,borderColor:'grey',borderRadius:15,margin:3,marginStart:30,bottom:150}}></View>
-          <Image style={{alignSelf:'flex-end', margin: 10,height:30,width:30,bottom:220,right:40}} source={require('../images/blankradiobutton.png')}/>
+          <Text style={styles.txt3}>Pay with Cash</Text>
+          <Image style={styles.img3} source={require('../images/cashlogo.png')}/>
+          <View style={styles.view2}></View>
+          <Image style={styles.img4} source={require('../images/blankradiobutton.png')}/>
 
          </View>
 
-         <Text style={{bottom:120,alignItems:'flex-start',color:'grey',fontSize:14,paddingStart:25,fontWeight: '500'}}>Note: This is only an estimated amount and the</Text>
-         <Text style={{bottom:120,alignItems:'flex-start',color:'grey',fontSize:14,paddingStart:25,fontWeight: '500'}}>final amount will be updated after motorcycle</Text>
-         <Text style={{bottom:120,alignItems:'flex-start',color:'grey',fontSize:14,paddingStart:25,fontWeight: '500'}}>has been diagnosed.</Text>
+         <Text style={styles.txt4}>Note: This is only an estimated amount and the</Text>
+         <Text style={styles.txt5}>final amount will be updated after motorcycle</Text>
+         <Text style={styles.txt6}>has been diagnosed.</Text>
 
 
-         <Text style={{ color: 'black', textTransform: 'capitalize', fontSize: 25, fontWeight: 'bold', position: 'absolute', margin: 10, paddingStart: 15, top: 330 }}>Order Summary</Text>
-         <Text style={{bottom:60,alignItems:'flex-start',color:'black',fontSize:18,paddingStart:27}}>Subtotal</Text>
-         <Text style={{bottom:50,alignItems:'flex-start',color:'black',fontSize:18,paddingStart:27}}>Est. Tax</Text>
-         <Text style={{bottom:20,alignItems:'flex-start',color:'black',fontWeight:'bold',fontSize:18,paddingStart:27}}>Total</Text>
-         <Text style={{bottom:133,alignItems:'flex-start',color:'black',fontSize:18,paddingStart:260}}>S$156.00</Text>
-         <Text style={{bottom:123,alignItems:'flex-start',color:'black',fontSize:18,paddingStart:270}}>S$13.00</Text>
-         <Text style={{bottom:94, color: '#4DB369',fontWeight: '800',fontSize:18,paddingStart:277,alignItems:'flex-start'}}>S$ 169</Text>
+         <Text style={styles.txt7}>Order Summary</Text>
+         <Text style={styles.txt8}>Subtotal</Text>
+         <Text style={styles.txt9}>Est. Tax</Text>
+         <Text style={styles.txt10}>Total</Text>
+         <Text style={styles.txt11}>S$156.00</Text>
+         <Text style={styles.txt12}>S$13.00</Text>
+         <Text style={styles.txt13}>S$ 169</Text>
             
 
         <View style={styles.fixToText}>
             <TouchableOpacity style={styles.appButtonContainer} onPress={() => navigation.navigate('Screen12')}>
-            <Text style={{textTransform: 'capitalize', fontSize: 18,color: 'white',fontWeight: 'bold',top:17,position: 'absolute',alignSelf:'center'}}>Proceed</Text>  
+            <Text style={styles.appButtonText}>Proceed</Text>  
             </TouchableOpacity>
         </View>
 
@@ -105,10 +104,6 @@ const Screen11 = ({navigation}) => {
 };
 
 const styles = StyleSheet.create({
-    fixToText: {
-      justifyContent:'center',
-      alignSelf:'stretch'
-    },
     direct: {
        alignSelf:'flex-start',
        height:30,
@@ -122,12 +117,13 @@ const styles = StyleSheet.create({
         borderBottomWidth: StyleSheet.hairlineWidth,
       },
       appButtonText:{
-        fontSize:18,
-        color:"white",
-        fontWeight:"bold",
-        alignSelf:"center",
-        textTransform:'capitalize',
-        
+        textTransform: 'capitalize', 
+        fontSize: 18,
+        color: 'white',
+        fontWeight: 'bold',
+        top:17,
+        position: 'absolute',
+        alignSelf:'center'
       },
     appButtonContainer:{
       elevation:8,
@@ -165,6 +161,174 @@ const styles = StyleSheet.create({
     padding:50,   
     marginTop:420
   },
+  bg1:{
+    backgroundColor:'#000000'
+  },
+  bg2:{
+    backgroundColor:'#ffffff'
+  },
+  view1:{
+    height:80,
+    width:295,
+    borderWidth:1,
+    borderColor:'grey',
+    borderRadius:15,
+    margin:3,
+    marginStart:30,
+    bottom:55
+  },
+  view2:{
+    height:80,
+    width:295,
+    borderWidth:1,
+    borderColor:'grey',
+    borderRadius:15,
+    margin:3,
+    marginStart:30,
+    bottom:150
+  },
+  img1:{
+    alignSelf:'flex-start', 
+    margin: 10,
+    height:40,
+    width:40,
+    left:35,
+    top:17
+  },
+  img2:{
+    alignSelf:'flex-end', 
+    margin: 10,
+    height:30,
+    width:30,
+    bottom:125,
+    right:40
+  },
+  img3:{
+    alignSelf:'flex-start', 
+    margin: 10,
+    height:40,
+    width:40,
+    left:35,
+    bottom:80
+  },
+  img4:{
+    alignSelf:'flex-end', 
+    margin: 10,
+    height:30,
+    width:30,
+    bottom:220,
+    right:40
+  },
+  txt1:{
+    color:'white',
+    textTransform:'capitalize',
+    fontWeight:'bold',
+    fontSize:20,
+    position:'absolute',
+    alignSelf:'center',
+    margin:20,
+    paddingEnd:10,
+    top:-13
+  },  
+  txt2:{
+    color: 'black', 
+    textTransform: 'none', 
+    fontSize: 18, 
+    fontWeight: '500', 
+    position: 'absolute', 
+    margin: 10, 
+    paddingStart: 95, 
+    top: 25
+  },
+  txt3:{
+    color:'black',
+    textTransform:'none',
+    fontWeight:'500',
+    fontSize:18,
+    position:'absolute',
+    margin:10,
+    paddingStart:95,
+    top:125
+  },
+  txt4:{
+    bottom:120,
+    alignItems:'flex-start',
+    color:'grey',
+    fontSize:14,
+    paddingStart:25,
+    fontWeight: '500'
+  },
+  txt5:{
+    bottom:120,
+    alignItems:'flex-start',
+    color:'grey',
+    fontSize:14,
+    paddingStart:25,
+    fontWeight: '500'
+  },
+  txt6:{
+    bottom:120,
+    alignItems:'flex-start',
+    color:'grey',
+    fontSize:14,
+    paddingStart:25,
+    fontWeight: '500'
+  },
+  txt7:{
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 25, 
+    fontWeight: 'bold', 
+    position: 'absolute', 
+    margin: 10, 
+    paddingStart: 15, 
+    top: 330
+  },
+  txt8:{
+    bottom:60,
+    alignItems:'flex-start',
+    color:'black',
+    fontSize:18,
+    paddingStart:27
+  },
+  txt9:{
+    bottom:50,
+    alignItems:'flex-start',
+    color:'black',
+    fontSize:18,
+    paddingStart:27
+  },
+  txt10:{
+    bottom:20,
+    alignItems:'flex-start',
+    color:'black',
+    fontSize:18,
+    paddingStart:27,
+    fontWeight:'bold'
+  },
+  txt11:{
+    bottom:133,
+    alignItems:'flex-start',
+    color:'black',
+    fontSize:18,
+    paddingStart:260
+  },
+  txt12:{
+    bottom:123,
+    alignItems:'flex-start',
+    color:'black',
+    fontSize:18,
+    paddingStart:270
+  },
+  txt13:{
+    bottom:94,
+    alignItems:'flex-start',
+    fontSize:18,
+    paddingStart:277,
+    color: '#4DB369',
+    fontWeight: '800'
+  },
+  
 });
 
-export default Screen11;
+export default Screen10;
