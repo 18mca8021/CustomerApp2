@@ -30,14 +30,14 @@ const Screen9 = ({navigation}) => {
         <View style={styles.bg2}>
           <View>
           <Text style={styles.txt2}>Chain Lubrication</Text>
-          <Image  source={require('../images/clock.png')}/>
+          <Image style={styles.imgclock1} source={require('../images/clock.png')}/>
           <Text style={styles.txttime1}> 20 min</Text>
           <Text style={styles.txtmore1}>More info</Text>
           <Text style={styles.txtcost1}>$ 39</Text>
           
           
           <Text style={styles.txt6}>Chain Lubrication</Text>
-          <Image  source={require('../images/clock.png')}/>
+          <Image style={styles.imgclock1} source={require('../images/clock.png')}/>
           <Text style={styles.txttime2}> 20 min</Text>
           <Text style={styles.txtmore2}>More info</Text>
           <Text style={styles.txtcost2}>$ 39</Text>
@@ -540,7 +540,16 @@ view3:{
   paddingBottom:30,
   top:-824,
   borderRadius:7,
-  backgroundColor:'rgb(250, 241, 241)'}
+  backgroundColor:'rgb(250, 241, 241)'},
+  imgclock1:{
+    alignSelf:'flex-start', margin: 10,height:15,width:15,left:25,top:12
+  },
+  imgclock2:{
+    alignSelf:'flex-start', margin: 10,height:15,width:15,left:25,top:72
+  },
+
 });
+
+
 
 export default Screen9;
