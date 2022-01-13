@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Image, StyleSheet, Text, TextInput,TouchableOpacity,SafeAreaView,StatusBar} from 'react-native';
+import { View, Image, StyleSheet, Text,TouchableOpacity,SafeAreaView,StatusBar} from 'react-native';
 
 const Screen13 = ({navigation}) => {
 
@@ -10,33 +10,23 @@ const Screen13 = ({navigation}) => {
     return (
         <>
         <SafeAreaView >
-            <Image style={styles.direct} source={require('../images/back2.png')} onPress={() => navigation.navigate('Screen14')}/>
+            <Image style={styles.direct} source={require('../images/back2.png')} 
+            onPress={() => navigation.navigate('Screen14')}/>
               <Separator/>
               <Separator/>
-
             <StatusBar backgroundColor='#f0f0f0' barStyle='dark-content'/>
 
-            <Image style={{alignSelf:'center', margin: 10,top:17,height:200,width:200}} source={require('../images/crossinglogo2.png')}/>
-         <Text style={{ color: 'black', textTransform: 'none', fontSize: 25, fontWeight: '900', position: 'absolute', margin: 10, top: 310,alignSelf:'center' }}>Oops! Something</Text>
-         <Text style={{ color: 'black', textTransform: 'none', fontSize: 25, fontWeight: '900', position: 'absolute', margin: 10, top: 335,alignSelf:'center' }}>went wrong.</Text>
-         <Text style={{ color: 'black', textTransform: 'none', fontSize: 15, fontWeight: 'bold', position: 'absolute', margin: 10, top: 380,alignSelf:'center' }}>Orizon team will accept your booking for</Text>
-         <Text style={{ color: 'black', textTransform: 'none', fontSize: 15, fontWeight: 'bold', position: 'absolute', margin: 10, top: 400,alignSelf:'center' }}>confirmation.</Text>
+        <Image style={styles.img} source={require('../images/crossinglogo2.png')}/>
+         <Text style={styles.txt1}>Oops! Something</Text>
+         <Text style={styles.txt2}>went wrong.</Text>
+         <Text style={styles.txt3}>Orizon team will accept your booking for</Text>
+         <Text style={styles.txt4}>confirmation.</Text>
 
         <View style={styles.fixToText}>
-            <TouchableOpacity style={{
-      backgroundColor:"#f2994a",
-      borderRadius:15,
-      paddingVertical:30,
-      paddingHorizontal:12,
-      margin: 20,
-      width:230,
-      left:-5,
-      top:10,
-      marginTop:40,
-      marginBottom:150,}} 
-      onPress={() => navigation.navigate('Screen14')}>
-        <Text style={{textTransform: 'capitalize', fontSize: 18,color: 'white',fontWeight: 'bold',top:17,position: 'absolute',alignSelf:'center'}}>Retry</Text>  
-        </TouchableOpacity>
+          <TouchableOpacity style={styles.appButtonContainer} 
+            onPress={() => navigation.navigate('Screen14')}>
+            <Text style={styles.appButtonText}>Retry</Text>  
+          </TouchableOpacity>
         </View>
 
         <Separator/>
@@ -84,10 +74,6 @@ const Screen13 = ({navigation}) => {
 };
 
 const styles = StyleSheet.create({
-    fixToText: {
-      justifyContent:'center',
-      alignSelf:'stretch'
-    },
     direct: {
        alignSelf:'flex-start',
        height:30,
@@ -101,25 +87,25 @@ const styles = StyleSheet.create({
         borderBottomWidth: StyleSheet.hairlineWidth,
       },
       appButtonText:{
-        fontSize:18,
-        color:"white",
-        fontWeight:"bold",
-        alignSelf:"center",
-        textTransform:'capitalize',
-        
+        textTransform: 'capitalize', 
+        fontSize: 18,
+        color: 'white',
+        fontWeight: 'bold',
+        top:17,
+        position: 'absolute',
+        alignSelf:'center'
       },
     appButtonContainer:{
-      //elevation:8,
-      backgroundColor:"#f2994a",
-      borderRadius:15,
-      paddingVertical:30,
-      paddingHorizontal:12,
-      margin: 20,
-      width:290,
-      left:-35,
-      top:30,
-      marginTop:40,
-      marginBottom:60,
+        backgroundColor:"#f2994a",
+        borderRadius:15,
+        paddingVertical:30,
+        paddingHorizontal:12,
+        margin: 20,
+        width:230,
+        left:-5,
+        top:10,
+        marginTop:40,
+        marginBottom:150,
   },
   boundary:{
     borderWidth:1,
@@ -144,6 +130,53 @@ const styles = StyleSheet.create({
     padding:50,   
     marginTop:420
   },
+  img:{
+    alignSelf:'center', 
+    margin: 10,
+    top:17,
+    height:200,
+    width:200
+  },
+  txt1:{ 
+    color: 'black', 
+    textTransform: 'none', 
+    fontSize: 25, 
+    fontWeight: '900', 
+    position: 'absolute', 
+    margin: 10, 
+    top: 310,
+    alignSelf:'center'
+   },
+  txt2:{ 
+    color: 'black', 
+    textTransform: 'none', 
+    fontSize: 25, 
+    fontWeight: '900', 
+    position: 'absolute', 
+    margin: 10, 
+    top: 335,
+    alignSelf:'center' 
+   },
+  txt3:{ 
+    color: 'black', 
+    textTransform: 'none', 
+    fontSize: 15, 
+    fontWeight: 'bold', 
+    position: 'absolute', 
+    margin: 10, 
+    top: 380,
+    alignSelf:'center' 
+   },
+  txt4:{ 
+    color: 'black', 
+    textTransform: 'none', 
+    fontSize: 15, 
+    fontWeight: 'bold', 
+    position: 'absolute', 
+    margin: 10, 
+    top: 400,
+    alignSelf:'center' 
+   },
 });
 
 export default Screen13;
