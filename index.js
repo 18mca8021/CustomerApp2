@@ -19,6 +19,7 @@ import Screen19 from './screens/Screen19';
 //import Buttons from './screens/Buttons';
 import Screen20 from './screens/Screen20';
 import Screen21 from './screens/Screen21';
+//import Anim1 from './Anim1';
 
 const index = () => {
     return (

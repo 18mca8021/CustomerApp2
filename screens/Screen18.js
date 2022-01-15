@@ -10,7 +10,8 @@ const Screen18 = ({navigation}) => {
     return (
         <>
         <SafeAreaView >
-            <Image style={styles.direct} source={require('../images/back2.png')} onPress={() => navigation.navigate('Screen9')}/>
+            <Image style={styles.direct} source={require('../images/back2.png')} 
+            onPress={() => navigation.navigate('Screen9')}/>
               <Separator/>
               <Separator/>
 

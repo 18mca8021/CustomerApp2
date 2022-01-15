@@ -16,72 +16,11 @@ const Services = () => {
     <>
       <ScrollView style={styles.ScrollViewContainer} horizontal={true}>
         <View style={styles.ImageContain}>
-          <Text
-            style={{
-              color: 'black',
-              textTransform: 'capitalize',
-              fontSize: 15,
-              fontWeight: 'bold',
-              position: 'relative',
-              margin: 10,
-              paddingStart: 5,
-              top: 40,
-            }}>
-            Chain Lubrication
-          </Text>
-          <Text
-            style={{
-              color: 'grey',
-              textTransform: 'none',
-              fontSize: 13,
-              fontWeight: '500',
-              position: 'absolute',
-              margin: 10,
-              paddingStart: 10,
-              top: 70,
-            }}>
-            RE classic 350
-          </Text>
-          <Text
-            style={{
-              color: '#F2994A',
-              textTransform: 'none',
-              fontSize: 13,
-              fontWeight: 'normal',
-              position: 'absolute',
-              margin: 10,
-              paddingStart: 10,
-              top: 85,
-            }}>
-            Cleande and lubricated
-          </Text>
-          <Text
-            style={{
-              color: 'black',
-              textTransform: 'capitalize',
-              fontSize: 18,
-              fontWeight: '800',
-              position: 'absolute',
-              margin: 10,
-              paddingStart: 103,
-              top: 60,
-            }}>
-            $ 39
-          </Text>
-
-          <Text
-            style={{
-              color: 'black',
-              textTransform: 'none',
-              fontSize: 15,
-              fontWeight: 'bold',
-              position: 'relative',
-              margin: 10,
-              paddingStart: 8,
-              top: 40,
-            }}>
-            Disc pad replacement
-          </Text>
+          <Text style={styles.txt1}>Chain Lubrication</Text>
+          <Text style={styles.txt2}>RE classic 350</Text>
+          <Text style={styles.txt3}>Cleande and lubricated</Text>
+          <Text style={styles.txt4}>$ 39</Text>
+          <Text style={styles.txt5}>Disc pad replacement</Text>
         </View>
       </ScrollView>
     </>
@@ -103,6 +42,56 @@ const styles = StyleSheet.create({
     padding: 5,
     paddingHorizontal: 5,
     paddingBottom: 90,
+  },
+  txt1:{
+    color: 'black',
+    textTransform: 'capitalize',
+    fontSize: 15,
+    fontWeight: 'bold',
+    position: 'relative',
+    margin: 10,
+    paddingStart: 5,
+    top: 40,
+  },
+  txt2:{
+    color: 'grey',
+    textTransform: 'none',
+    fontSize: 13,
+    fontWeight: '500',
+    position: 'absolute',
+    margin: 10,
+    paddingStart: 10,
+    top: 70,
+  },
+  txt3:{
+    color: '#F2994A',
+    textTransform: 'none',
+    fontSize: 13,
+    fontWeight: 'normal',
+    position: 'absolute',
+    margin: 10,
+    paddingStart: 10,
+    top: 85,
+  },
+  txt4:{
+    color: 'black',
+    textTransform: 'capitalize',
+    fontSize: 18,
+    fontWeight: '800',
+    position: 'absolute',
+    margin: 10,
+    paddingStart: 103,
+    top: 60,
+  },
+  txt5:{
+    color: 'black',
+    textTransform: 'none',
+    fontSize: 15,
+    fontWeight: 'bold',
+    position: 'relative',
+    margin: 10,
+    paddingStart: 8,
+    top: 40,
   },
 });
 
