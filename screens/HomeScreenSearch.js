@@ -1,22 +1,40 @@
 import * as React from 'react';
-import { View, Button, Image, StyleSheet, Text, TextInput, TouchableOpacity, SafeAreaView, } from 'react-native';
+import { View, Button, Image, StyleSheet, Text, TextInput, TouchableOpacity, SafeAreaView,BackHandler } from 'react-native';
+import { useFocusEffect,useNavigation } from '@react-navigation/native';
 
-
-const HomeScreenSearch = ({navigation}) => {
-  //const navigation = useNavigation();
+const HomeScreenSearch = (props) => {
+  const navigation = useNavigation();
 
   const Separator = () => (
     <View style={styles.separator} />
   );
+
+  useFocusEffect(
+    React.useCallback(() => {
+        const onBackPress = () => {
+           //alert('Back Press handled and doing no action');
+           'hardwareBackPress',
+            onBackPress
+        };
+        BackHandler.addEventListener(
+            'hardwareBackPress',
+            onBackPress
+        );
+    },[]),
+);  
 
   return (
     <>
       <SafeAreaView >
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../images/back.png')} onPress={() => navigation.navigate('HomeScreen')}/>
+            <TouchableOpacity
+             onPress={() => props.navigation.goBack()}>
+            <Image style={styles.direct} source={require('../images/back.png')} />
+            </TouchableOpacity>
             <Text style={styles.txt1}
-            onPress={() => navigation.navigate('Screen5')}>Search Services</Text>
+            >Search Services</Text>
+            
             <Separator/>
             </View>
           
@@ -62,7 +80,7 @@ const HomeScreenSearch = ({navigation}) => {
           <Separator/>
           <Separator/>
           <View>
-          <Text style={styles.txt2}>Clear Search History</Text>
+          <Text style={styles.txt2} onPress={() => navigation.navigate('Screen5')}>Clear Search History</Text>
           </View>
           <Separator/>
           <Separator/>

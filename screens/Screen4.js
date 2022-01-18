@@ -12,7 +12,7 @@ const Screen4 = ({navigation}) => {
         <SafeAreaView>
         <View> 
           <View style={styles.bg}>
-            <Image style={styles.direct} source={require('../images/login.png')} />
+            <Image style={styles.direct} source={require('../images/orizonsmall.png')} />
             <Separator/>
             </View>
             <SafeAreaView style={styles.bg}>
@@ -81,7 +81,8 @@ const styles = StyleSheet.create({
     },
     direct: {
        alignSelf:'flex-start',
-       marginStart:10
+       marginStart:10,
+       alignSelf:'center'
     },
     separator: {
         marginVertical: 8,

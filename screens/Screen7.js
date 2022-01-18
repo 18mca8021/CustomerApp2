@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Image, StyleSheet, Text, TextInput,TouchableOpacity,SafeAreaView,ScrollView, Button,Modal} from 'react-native';
+import { View, Image, StyleSheet, Text, TextInput,TouchableOpacity,SafeAreaView,Modal} from 'react-native';
 import { StylesContext } from '@material-ui/styles';
 import {useState} from 'react';
 import Radio  from './Radio';
@@ -17,7 +17,8 @@ const Screen7 = ({navigation}) => {
         <SafeAreaView > 
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../images/back.png')} onPress={() => navigation.navigate('Home')}/>
+            <Image style={styles.direct} source={require('../images/back.png')} 
+            onPress={() => navigation.navigate('Home')}/>
             <Text style={styles.txt1}>Replacement Bike</Text>
             <Separator/>
             </View>
@@ -82,7 +83,7 @@ const Screen7 = ({navigation}) => {
           </View>
 
 
-          <SafeAreaView style={styles.safearea}>        
+      <SafeAreaView style={styles.safearea}>        
        <View style={StylesContext.container}>
            <Modal  animationType={'slide'} transparent={false} visible={showModal} onRequestClose={() =>{ console.log('Modal has been closed.');}}>
             <View style={styles.modal}>

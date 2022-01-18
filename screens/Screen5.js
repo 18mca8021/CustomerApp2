@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Image, StyleSheet, Text, TextInput,SafeAreaView,ScrollView,} from 'react-native';
+import { View, Image, StyleSheet, Text, TextInput,SafeAreaView,ScrollView,TouchableOpacity} from 'react-native';
 
 const Screen5 = ({navigation}) => {
 
@@ -13,7 +13,10 @@ const Screen5 = ({navigation}) => {
           <ScrollView>
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../images/back.png')} onPress={() => navigation.navigate('Home')}/>
+          <TouchableOpacity
+             onPress={() => props.navigation.goBack()}>
+            <Image style={styles.direct} source={require('../images/back.png')} />
+            </TouchableOpacity>
             <Text style={styles.txt1}>Services</Text>
             <Separator/>
             </View>

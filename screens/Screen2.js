@@ -15,9 +15,9 @@ const Screen2 = ({navigation}) => {
         <SafeAreaView>
         <View> 
           <View style={styles.bg} >
-            <Image style={styles.direct} source={require('../images/login.png')} />
+            <Image style={styles.direct} source={require('../images/orizonsmall.png')} />
             <Separator/>
-            </View>
+          </View>
             <SafeAreaView style={styles.bg}>
             <View style={styles.boundary}>
               <Separator/>
@@ -26,7 +26,7 @@ const Screen2 = ({navigation}) => {
             <Separator/>
             <Separator/>
             <Separator/>
-            <Text style={styles.txt2}>VRN</Text>
+            <Text style={styles.txt2}>Vehicle Registration Number</Text>
             <View style={styles.innerview}>
             <TextInput placeholder='enter VRN' style={styles.txtin}/></View>
             <Text style={styles.txt2} >Mobile Number</Text>
@@ -37,7 +37,7 @@ const Screen2 = ({navigation}) => {
             <TouchableOpacity style={styles.appButtonContainer} onPress={() => navigation.navigate('Screen4')} >
               <Text style={styles.appButtonText}>Log In</Text>
             </TouchableOpacity>   
-            <Text style={styles.txt3}>Forgot Password?</Text>
+            <Text style={styles.txt3}>Forgot password?</Text>
             <Separator/><Separator/>
             <Text style={styles.txt4} onPress={() => navigation.navigate('Screen3')}>Sign Up</Text>
           <Separator/>
@@ -76,7 +76,8 @@ const styles = StyleSheet.create({
     },
     direct: {
        alignSelf:'flex-start',
-       marginStart:10
+       marginStart:10,
+       alignSelf:'center'
     },
     separator: {
         marginVertical: 8,

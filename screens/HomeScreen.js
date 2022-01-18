@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Image, StyleSheet, Text, TextInput, SafeAreaView, ScrollView, } from 'react-native';
+import { View, Image, StyleSheet, Text, TextInput, SafeAreaView, ScrollView,TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import Nexthings from './Nexthings';
 import Besthings from './Besthings';
@@ -19,7 +19,7 @@ const HomeScreen = () => {
       <ScrollView style={styles.bg1} >     
           <View>
             <View style={styles.bg1} >
-              <Image style={styles.direct} source={require('../images/login.png')} />
+              <Image style={styles.direct} source={require('../images/orizonsmall.png')} />
               <Text style={styles.txt1}
               onPress={() => navigation.navigate('HomeScreenSearch')}>Orizon</Text>
               <Text style={styles.txt2}

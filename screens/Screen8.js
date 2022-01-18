@@ -13,7 +13,8 @@ const Screen8 = ({navigation}) => {
         <SafeAreaView >
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../images/back.png')} onPress={() => navigation.navigate('Screen4')}/>
+            <Image style={styles.direct} source={require('../images/back.png')} 
+            onPress={() => navigation.navigate('Screen4')}/>
             <Text style={styles.txt1}> Service Details</Text>
             <Separator/>
             </View>
