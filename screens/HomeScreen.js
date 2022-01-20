@@ -166,8 +166,9 @@ const styles = StyleSheet.create({
     position: 'absolute', 
     alignSelf: 'center', 
     margin: 10, 
-    paddingEnd: 40,
-    bottom:40 
+    paddingEnd: -70,
+    bottom:40,
+    paddingStart:37 
   },
   txt2:{
     color: 'white', 
@@ -178,52 +179,157 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end', 
     margin: -17, 
     bottom: 28, 
-    paddingEnd: 92
+    paddingEnd: 52
   },
   txt3:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'relative', margin: 10, paddingStart: 17, bottom: 15
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'relative', 
+    margin: 10, 
+    paddingStart: 17, 
+    bottom: 15
   },
   txt4:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'relative', margin: 10, paddingStart: 15, bottom: 40
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'relative', 
+    margin: 10, 
+    paddingStart: 15, 
+    bottom: 40
   },
   txt5:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'absolute', margin: 10, paddingStart: 110, bottom: 220
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'absolute', 
+    margin: 10, 
+    paddingStart: 110, 
+    bottom: 220
   },
   txt6:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'relative', margin: 10, paddingStart: 115, bottom: 75
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'relative', 
+    margin: 10, 
+    paddingStart: 115, 
+    bottom: 75
   },
   txt7:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'relative', margin: 10, paddingStart: 190, bottom: 118
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'relative', 
+    margin: 10, 
+    paddingStart: 190, 
+    bottom: 118
   },
   txt8:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'relative', margin: 10, paddingStart: 198, bottom: 143
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'relative', 
+    margin: 10, 
+    paddingStart: 198, 
+    bottom: 143
   },
   txt9:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'relative', margin: 10, paddingStart: 275, bottom:187
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'relative', 
+    margin: 10, 
+    paddingStart: 275, 
+    bottom:187
   },
   txt10:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'relative', margin: 10, paddingStart: 282, bottom: 212
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'relative', 
+    margin: 10, 
+    paddingStart: 282, 
+    bottom: 212
   },
   txt11:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'relative', margin: 10, paddingStart: 23, bottom: 235
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'relative', 
+    margin: 10, 
+    paddingStart: 23, 
+    bottom: 235
   },
   txt12:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'relative', margin: 10, paddingStart: 23, bottom: 260
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'relative', 
+    margin: 10, 
+    paddingStart: 23, 
+    bottom: 260
   },
   txt13:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'relative', margin: 10, paddingStart: 117, bottom: 303
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'relative', 
+    margin: 10, 
+    paddingStart: 117, 
+    bottom: 303
   },
   txt14:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'relative', margin: 10, paddingStart: 110, bottom: 327
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'relative', 
+    margin: 10, 
+    paddingStart: 110, 
+    bottom: 327
   },
   txt15:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'relative', margin: 10, paddingStart: 195, bottom: 370
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'relative', 
+    margin: 10, 
+    paddingStart: 195, 
+    bottom: 370
   },
   txt16:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'relative', margin: 10, paddingStart: 190, bottom: 395
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'relative', 
+    margin: 10, 
+    paddingStart: 190, 
+    bottom: 395
   },
   txt17:{
-    color: 'black', textTransform: 'capitalize', fontSize: 10, fontWeight: 'bold', position: 'relative', margin: 10, paddingStart: 275, bottom: 438
+    color: 'black', 
+    textTransform: 'capitalize', 
+    fontSize: 10, 
+    fontWeight: 'bold', 
+    position: 'relative', 
+    margin: 10, 
+    paddingStart: 275, 
+    bottom: 438
   },
   innerview1:{
     flexDirection:'row',

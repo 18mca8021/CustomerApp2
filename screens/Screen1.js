@@ -27,12 +27,14 @@ const Screen1 = ({navigation}) => {
         <Separator/>
             <Image style={styles.direct2} source={require('../images/orizonbig.png')} />
             <Separator />
+           
             <Text style={styles.txt5}>All motorcycle services on your</Text>
             <Text style={styles.txt6}>fingertips.</Text>
             <Separator />
             <Separator />
             <Separator />
             <Separator />
+            
           <View style={styles.fixToText}>
             <TouchableOpacity style={styles.btn1} 
               onPress={() => {setShowModal(!showModal);}} >
