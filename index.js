@@ -20,7 +20,6 @@ import Anim3 from './screens/Anim3';
 //import Buttons from './screens/Buttons';
 //import Screen20 from './screens/Screen20';
 //import Screen21 from './screens/Screen21';
-//import Anim from './screens/Anim';
 //import Backbutton from './screens/Backbutton';
 //import Anim2 from './screens/Anim2';
 
