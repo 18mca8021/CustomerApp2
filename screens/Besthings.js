@@ -9,17 +9,17 @@ const Besthings = () => {
             <Text style={styles.txt2}>See All</Text>
             <ScrollView horizontal={true} style={styles.ScrollViewContainer} >
                 <View style={styles.ImageContain}>
-                    <Image source={require('../images/machine.png')} style={styles.ImageConatiner}></Image>
+                    <Image source={require('../components/images/machine.png')} style={styles.ImageConatiner}></Image>
                     <Text style={styles.txt3}>Air Filter</Text>
                     <Text style={styles.txt4}>Replacement</Text>
                     <Text style={styles.txt5}>start at</Text>
                     <Text style={styles.txt6}>$19</Text>
-                    <Image source={require('../images/bike.png')} style={styles.ImageConatiner}></Image>
+                    <Image source={require('../components/images/bike.png')} style={styles.ImageConatiner}></Image>
                     <Text style={styles.txt7}>Complete Wash</Text>
                     <Text style={styles.txt8}>Inside-out wash</Text>
                     <Text style={styles.txt9}>start at</Text>
                     <Text style={styles.txt10}>$49</Text>
-                    <Image source={require('../images/machine.png')} style={styles.ImageConatiner}></Image>
+                    <Image source={require('../components/images/machine.png')} style={styles.ImageConatiner}></Image>
                     <Text style={styles.txt11}>Complete Wash</Text>
                     <Text style={styles.txt12}>Inside-out wash</Text>
                     <Text style={styles.txt13}>start at</Text>

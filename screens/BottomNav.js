@@ -57,7 +57,7 @@ function MyTabs() {
         
         options={{
           tabBarIcon: () => (
-            <Image  source={require('../images/house.png')} style={{
+            <Image  source={require('../components/images/house.png')} style={{
               width: 30,
               height: 30,
               margin: 5,
@@ -72,7 +72,7 @@ function MyTabs() {
         options={{
           tabBarLabel: 'Loan',
           tabBarIcon: () => (
-            <Image  source={require('../images/loan.png')} style={{
+            <Image  source={require('../components/images/loan.png')} style={{
               width: 30,
               height: 30,
               margin: 5,
@@ -88,7 +88,7 @@ function MyTabs() {
         options={{
           tabBarLabel: 'Bookings',
           tabBarIcon: () => (
-            <Image  source={require('../images/booking.png')} style={{
+            <Image  source={require('../components/images/booking.png')} style={{
               width: 30,
               height: 30,
               margin: 5,
@@ -103,7 +103,7 @@ function MyTabs() {
         options={{
           tabBarLabel: 'Profile',
           tabBarIcon: () => (
-            <Image  source={require('../images/profile.png')} style={{
+            <Image  source={require('../components/images/profile.png')} style={{
               width: 30,
               height: 30,
               margin: 5,

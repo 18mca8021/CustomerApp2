@@ -13,7 +13,7 @@ const Screen19 = ({navigation}) => {
           <StatusBar backgroundColor='black' barStyle='light-content'/>
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../images/back.png')}/>
+            <Image style={styles.direct} source={require('../components/images/back.png')}/>
             <Text style={styles.txthead} 
             onPress={() => navigation.navigate('Screen20')}>FAQ's</Text>
             <Separator/>
@@ -25,7 +25,7 @@ const Screen19 = ({navigation}) => {
               <Separator/>
             <View style={styles.bg2}>
             <View style={styles.view1}>
-              <Image style={styles.img1} source={require('../images/search.png')} />
+              <Image style={styles.img1} source={require('../components/images/search.png')} />
               <View style={styles.view2}>
               <TextInput placeholder='Search' maxLength={50}/>
               </View>
@@ -35,49 +35,49 @@ const Screen19 = ({navigation}) => {
          
         <View> 
         <Text style={styles.txt1}>Morbi mauris nibh enim vestibulum</Text>
-        <Image style={styles.img2} source={require('../images/forward2.png')}/>
+        <Image style={styles.img2} source={require('../components/images/forward2.png')}/>
           
       </View>
 
       <View> 
         <Text style={styles.txt2}>Nunc consectetur porttitor dignissim eget</Text>
-        <Image style={styles.img3} source={require('../images/forward2.png')}/>
+        <Image style={styles.img3} source={require('../components/images/forward2.png')}/>
           
       </View>
 
       <View> 
         <Text style={styles.txt3}>Urna, consectetur hendrerit tincidunt nunc</Text>
-        <Image style={styles.img4} source={require('../images/forward2.png')}/>
+        <Image style={styles.img4} source={require('../components/images/forward2.png')}/>
           
       </View>
 
       <View> 
         <Text style={styles.txt4}>Eget in morbi tellus commodo</Text>
-        <Image style={styles.img5} source={require('../images/forward2.png')}/>
+        <Image style={styles.img5} source={require('../components/images/forward2.png')}/>
           
       </View>
 
       <View> 
         <Text style={styles.txt5}>Purus sodales hac neque nunc</Text>
-        <Image style={styles.img6} source={require('../images/forward2.png')}/>
+        <Image style={styles.img6} source={require('../components/images/forward2.png')}/>
           
       </View>
 
       <View> 
         <Text style={styles.txt6}>Vel, sed volutpat, nec varius</Text>
-        <Image style={styles.img7} source={require('../images/forward2.png')}/>
+        <Image style={styles.img7} source={require('../components/images/forward2.png')}/>
           
       </View>
 
       <View> 
         <Text style={styles.txt7}>Proin posuere ligula aliquet arcu</Text>
-        <Image style={styles.img8} source={require('../images/forward2.png')}/>
+        <Image style={styles.img8} source={require('../components/images/forward2.png')}/>
           
       </View>
 
       <View> 
         <Text style={styles.txt8}>Vitae volutpar eros, diam nisi</Text>
-        <Image style={styles.img9} source={require('../images/forward2.png')}/>
+        <Image style={styles.img9} source={require('../components/images/forward2.png')}/>
           
       </View>
 

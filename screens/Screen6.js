@@ -12,7 +12,7 @@ const Screen6 = ({navigation}) => {
         <SafeAreaView >
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../images/back.png')} onPress={() => navigation.navigate('Screen5')}/>
+            <Image style={styles.direct} source={require('../components/images/back.png')} onPress={() => navigation.navigate('Screen5')}/>
             <Text style={styles.txt1}> General Servicing</Text>
             <Separator/>
             </View>
@@ -23,44 +23,44 @@ const Screen6 = ({navigation}) => {
         <View style={styles.bg2}>
           <View>
           <Text style={styles.txt2}>Oil Change</Text>
-          <Image style={styles.imgclock1} source={require('../images/clock.png')}/>
+          <Image style={styles.imgclock1} source={require('../components/images/clock.png')}/>
           <Text style={styles.txttime1}> 20 min</Text>
           <Text style={styles.txtmore1}>More info</Text>
           <Text style={styles.txtcost1}>$ 39</Text>
-          <Image style={styles.imgadd1} source={require('../images/add.png')}/> 
-          <Image source={require('../images/separator2.png')} style={styles.sep1}></Image>
+          <Image style={styles.imgadd1} source={require('../components/images/add.png')}/> 
+          <Image source={require('../components/images/separator2.png')} style={styles.sep1}></Image>
           
           <Text style={styles.txt3}>Wash</Text>
-          <Image style={styles.imgclock2} source={require('../images/clock.png')}/>
+          <Image style={styles.imgclock2} source={require('../components/images/clock.png')}/>
           <Text style={styles.txttime2}> 20 min</Text>
           <Text style={styles.txtmore2}>More info</Text>
           <Text style={styles.txtcost2}>$ 39</Text>
-          <Image style={styles.imgadd2} source={require('../images/subtract.png')}/> 
-          <Image source={require('../images/separator2.png')} style={styles.sep2}></Image>
+          <Image style={styles.imgadd2} source={require('../components/images/subtract.png')}/> 
+          <Image source={require('../components/images/separator2.png')} style={styles.sep2}></Image>
           
           <Text style={styles.txt4}>Air Filter Replacement</Text>
-          <Image style={styles.imgclock3} source={require('../images/clock.png')}/>
+          <Image style={styles.imgclock3} source={require('../components/images/clock.png')}/>
           <Text style={styles.txttime3}> 20 min</Text>
           <Text style={styles.txtmore3}>More info</Text>
           <Text style={styles.txtcost3}>$ 39</Text>
-          <Image style={styles.imgadd3} source={require('../images/add.png')}/> 
-          <Image source={require('../images/separator2.png')} style={styles.sep3}></Image>
+          <Image style={styles.imgadd3} source={require('../components/images/add.png')}/> 
+          <Image source={require('../components/images/separator2.png')} style={styles.sep3}></Image>
           
           <Text style={styles.txt5}>Exhaust Cleaning</Text>
-          <Image style={styles.imgclock4} source={require('../images/clock.png')}/>
+          <Image style={styles.imgclock4} source={require('../components/images/clock.png')}/>
           <Text style={styles.txttime4}> 20 min</Text>
           <Text style={styles.txtmore4}>More info</Text>
           <Text style={styles.txtcost4}>$ 39</Text>
-          <Image style={styles.imgadd4} source={require('../images/add.png')}/> 
-          <Image source={require('../images/separator2.png')} style={styles.sep4}></Image>
+          <Image style={styles.imgadd4} source={require('../components/images/add.png')}/> 
+          <Image source={require('../components/images/separator2.png')} style={styles.sep4}></Image>
 
           <Text style={styles.txt6}>Chain Lubrication</Text>
-          <Image style={styles.imgclock5} source={require('../images/clock.png')}/>
+          <Image style={styles.imgclock5} source={require('../components/images/clock.png')}/>
           <Text style={styles.txttime5}> 20 min</Text>
           <Text style={styles.txtmore5}>More info</Text>
           <Text style={styles.txtcost5}>$ 39</Text>
-          <Image style={styles.imgadd5} source={require('../images/add.png')}/> 
-          <Image source={require('../images/separator2.png')} style={styles.sep5}></Image>
+          <Image style={styles.imgadd5} source={require('../components/images/add.png')}/> 
+          <Image source={require('../components/images/separator2.png')} style={styles.sep5}></Image>
           
           <View style={styles.fixToText}>
             <TouchableOpacity style={styles.appButtonContainer} onPress={() => navigation.navigate('Screen7')}>

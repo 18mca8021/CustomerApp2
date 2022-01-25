@@ -13,7 +13,7 @@ const Screen8 = ({navigation}) => {
         <SafeAreaView >
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../images/back.png')} 
+            <Image style={styles.direct} source={require('../components/images/back.png')} 
             onPress={() => navigation.navigate('Screen4')}/>
             <Text style={styles.txt1}> Service Details</Text>
             <Separator/>
@@ -26,17 +26,17 @@ const Screen8 = ({navigation}) => {
           <View>
           <Text style={styles.txt2}>Last Service Date</Text>
           <Text style={styles.txt3}> --/--/----</Text>
-          <Image style={styles.img1} source={require('../images/calendar.png')}/> 
-          <Image source={require('../images/separator2.png')} style={styles.sep1}></Image>
+          <Image style={styles.img1} source={require('../components/images/calendar.png')}/> 
+          <Image source={require('../components/images/separator2.png')} style={styles.sep1}></Image>
           
 
           <Text style={styles.txt4}>Last oil change mileage</Text>
           <Text style={styles.txt5}> 123456 KM </Text> 
-          <Image source={require('../images/separator2.png')} style={styles.sep2}></Image>
+          <Image source={require('../components/images/separator2.png')} style={styles.sep2}></Image>
           
           <Text style={styles.txt6}>Description</Text>
           <Text style={styles.txt7}> Please elaborate your service request. </Text> 
-          <Image source={require('../images/separator2.png')} style={styles.sep3}></Image>
+          <Image source={require('../components/images/separator2.png')} style={styles.sep3}></Image>
 
           <Text style={styles.txt8}>Upload Photos & Videos</Text>
           
@@ -49,8 +49,8 @@ const Screen8 = ({navigation}) => {
             <Text style={styles.txtbottom3}>Inc. of all taxes</Text>
         </View>
         <View>
-          <Image style={styles.img2} source={require('../images/openvan.png')}/>
-          <Image style={styles.img3} source={require('../images/openvan.png')}/>
+          <Image style={styles.img2} source={require('../components/images/openvan.png')}/>
+          <Image style={styles.img3} source={require('../components/images/openvan.png')}/>
           <UploadImage/>
           <Text style={styles.txt9}>Add More</Text>
           </View>

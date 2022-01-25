@@ -15,7 +15,7 @@ const Screen5 = ({navigation}) => {
           <View style={styles.bg1}>
           <TouchableOpacity
              onPress={() => props.navigation.goBack()}>
-            <Image style={styles.direct} source={require('../images/back.png')} />
+            <Image style={styles.direct} source={require('../components/images/back.png')} />
             </TouchableOpacity>
             <Text style={styles.txt1}>Services</Text>
             <Separator/>
@@ -27,7 +27,7 @@ const Screen5 = ({navigation}) => {
               <Separator/>
             <View style={styles.bg2}>
             <View style={styles.innerview}>
-            <Image style={styles.imgsrch} source={require('../images/search.png')} />
+            <Image style={styles.imgsrch} source={require('../components/images/search.png')} />
             <TextInput placeholder='Search' maxLength={50}/>
         </View>
         </View>  
@@ -35,65 +35,65 @@ const Screen5 = ({navigation}) => {
         <View style={styles.bg2}>
           <ScrollView >
           <View>
-          <Image source={require('../images/engine.png')} style={styles.imgpic}></Image>
+          <Image source={require('../components/images/engine.png')} style={styles.imgpic}></Image>
           <Text style={styles.txt2}>Include visiting charges</Text>
           <Text style={styles.txt3}
           onPress={() => navigation.navigate('Screen6')}>General Servicing</Text>
           </View> 
-          <Image source={require('../images/forward.png')} style={styles.imgarrow1}
+          <Image source={require('../components/images/forward.png')} style={styles.imgarrow1}
            onPress={() => navigation.navigate('Screen7')}></Image>
-          <Image source={require('../images/separator2.png')} style={styles.sep1}></Image>
+          <Image source={require('../components/images/separator2.png')} style={styles.sep1}></Image>
 
           <View>
-          <Image source={require('../images/engine2.png')} style={styles.imgpic}></Image>
+          <Image source={require('../components/images/engine2.png')} style={styles.imgpic}></Image>
           <Text style={styles.txt2}>Include visiting charges</Text>
           <Text style={styles.txt3}>Gear and Clutch</Text>      
         </View>
-        <Image source={require('../images/forward.png')} style={styles.imgarrow2}></Image>
-        <Image source={require('../images/separator2.png')} style={styles.sep2}></Image>
+        <Image source={require('../components/images/forward.png')} style={styles.imgarrow2}></Image>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep2}></Image>
         
 
         <View>
-          <Image source={require('../images/engine3.png')} style={styles.imgpic}></Image>
+          <Image source={require('../components/images/engine3.png')} style={styles.imgpic}></Image>
           <Text style={styles.txt2}>Include visiting charges</Text>
           <Text style={styles.txt3}>Electronics Repair</Text>      
         </View>
-        <Image source={require('../images/forward.png')} style={styles.imgarrow3}></Image>
-        <Image source={require('../images/separator2.png')} style={styles.sep3}></Image>
+        <Image source={require('../components/images/forward.png')} style={styles.imgarrow3}></Image>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep3}></Image>
         
         <View>
-          <Image source={require('../images/engine4.png')} style={styles.imgpic}></Image>
+          <Image source={require('../components/images/engine4.png')} style={styles.imgpic}></Image>
           <Text style={styles.txt2}>Include visiting charges</Text>
           <Text style={styles.txt3}>Breaks and Tyres</Text>      
         </View>
-        <Image source={require('../images/forward.png')} style={styles.imgarrow4}></Image>
-        <Image source={require('../images/separator2.png')} style={styles.sep4}></Image>
+        <Image source={require('../components/images/forward.png')} style={styles.imgarrow4}></Image>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep4}></Image>
         
         
         <View>
-          <Image source={require('../images/engine5.png')} style={styles.imgpic}></Image>
+          <Image source={require('../components/images/engine5.png')} style={styles.imgpic}></Image>
           <Text style={styles.txt2}>Include visiting charges</Text>
           <Text style={styles.txt3}>Scheduled Service</Text>      
         </View>
-        <Image source={require('../images/forward.png')} style={styles.imgarrow5}></Image>
-        <Image source={require('../images/separator2.png')} style={styles.sep5}></Image>
+        <Image source={require('../components/images/forward.png')} style={styles.imgarrow5}></Image>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep5}></Image>
    
         
         <View>
-          <Image source={require('../images/engine6.png')} style={styles.imgpic}></Image>
+          <Image source={require('../components/images/engine6.png')} style={styles.imgpic}></Image>
           <Text style={styles.txt2}>Include visiting charges</Text>
           <Text style={styles.txt3}>Towing Service</Text>      
         </View>
-        <Image source={require('../images/forward.png')} style={styles.imgarrow6}></Image>
-        <Image source={require('../images/separator2.png')} style={styles.sep6}></Image>
+        <Image source={require('../components/images/forward.png')} style={styles.imgarrow6}></Image>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep6}></Image>
         
         <View>
-          <Image source={require('../images/engine7.png')} style={styles.imgpic}></Image>
+          <Image source={require('../components/images/engine7.png')} style={styles.imgpic}></Image>
           <Text style={styles.txt2}>Include visiting charges</Text>
           <Text style={styles.txt3}>Rust Cleaning</Text>      
         </View>
-        <Image source={require('../images/forward.png')} style={styles.imgarrow7}></Image>
-        <Image source={require('../images/separator2.png')} style={styles.sep7}></Image>
+        <Image source={require('../components/images/forward.png')} style={styles.imgarrow7}></Image>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep7}></Image>
         </ScrollView>
         <Separator/>
         <Separator/>

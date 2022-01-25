@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { View, Image, StyleSheet, Text,TextInput,TouchableOpacity,SafeAreaView,StatusBar,Modal} from 'react-native';
+import { View, Image, StyleSheet, Text,TextInput,TouchableOpacity,SafeAreaView,StatusBar,Modal,} from 'react-native';
 import {useState} from 'react';
-import Hide from './Hide';
+import Hide from '../components/others/Hide';
 
 
 const Screen1 = ({navigation}) => {
@@ -25,7 +25,7 @@ const Screen1 = ({navigation}) => {
         <Separator />
         <Separator/>
         <Separator/>
-            <Image style={styles.direct2} source={require('../images/orizonbig.png')} />
+            <Image style={styles.direct2} source={require('../components/images/orizonbig.png')} />
             <Separator />
            
             <Text style={styles.txt5}>All motorcycle services on your</Text>
@@ -50,12 +50,12 @@ const Screen1 = ({navigation}) => {
 
       <SafeAreaView style={styles.safearea}>        
        <View style={styles.container2}>
-          <Modal  animationType={'slide'} transparent={false} visible={showModal} 
+          <Modal  animationType={'slide'} transparent={true} visible={showModal} 
             onRequestClose={() =>{ console.log('Modal has been closed.');}}>
         <SafeAreaView>
         <View> 
           <View style={styles.bg} >
-            <Image style={styles.direct} source={require('../images/orizonsmall.png')} />
+            <Image style={styles.direct} source={require('../components/images/orizonsmall.png')} />
             <Separator/>
           </View>
             <SafeAreaView style={styles.bg}>

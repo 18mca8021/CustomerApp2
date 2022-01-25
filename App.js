@@ -1,7 +1,7 @@
 import * as React from 'react';
 import HomeScreen from './screens/HomeScreen';
 import HomeScreenSearch from './screens/HomeScreenSearch';
-import Screen1 from './screens/Screen1';
+//import Screen1 from './screens/Screen1';
 import Screen2 from './screens/Screen2';
 import Screen3 from './screens/Screen3';
 import Screen4 from './screens/Screen4';
@@ -23,6 +23,9 @@ import Screen19 from './screens/Screen19';
 import Screen20 from './screens/Screen20';
 import Screen21 from './screens/Screen21';
 import Backbutton from './screens/Backbutton';
+import Anim4 from './screens/Anim4';
+import Secondscreen from './screens/Secondscreen';
+import Login from './components/modals/Login';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -34,8 +37,9 @@ const Stack = createNativeStackNavigator();
 export  default function App(){
     return (
         <NavigationContainer>
-      <Stack.Navigator initialRouteName="Screen1">
-        <Stack.Screen name="Screen1" component={Screen1} options={{headerShown:false}}/>
+      <Stack.Navigator initialRouteName="Anim4">
+        {/*{<Stack.Screen name="Screen1" component={Screen1} options={{headerShown:false}}/>}*/}
+        <Stack.Screen name="Anim4" component={Anim4} options={{headerShown:false}}/>
         <Stack.Screen name="Screen2" component={Screen2} options={{headerShown:false}}/>
         <Stack.Screen name="Screen3" component={Screen3} options={{headerShown:false}}/>
         <Stack.Screen name="Screen4" component={Screen4} options={{headerShown:false}}/>
@@ -57,6 +61,9 @@ export  default function App(){
         <Stack.Screen name="Screen20" component={Screen20} options={{headerShown:false}}/>
         <Stack.Screen name="Screen21" component={Screen21} options={{headerShown:false}}/>
         <Stack.Screen name="Backbutton" component={Backbutton} options={{headerShown:true}}/>
+        <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>  
+
+        <Stack.Screen name="Secondscreen" component={Secondscreen} options={{headerShown:false}}/>  
 
         <Stack.Screen name="HomeScreen" component={HomeScreen} options={{headerShown:false}}/>
         <Stack.Screen name="HomeScreenSearch" component={HomeScreenSearch} options={{headerShown:false}}/>     

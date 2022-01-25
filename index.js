@@ -1,8 +1,8 @@
 import React from 'react';
 import { AppRegistry } from 'react-native';  
 import {name as appName} from './app.json';
-//import App from './App';
-import Anim3 from './screens/Anim3';
+import App from './App';
+//import Anim3 from './screens/Anim3';
 //import Screen16 from './screens/Screen16';
 //import Screen17 from './screens/Screen17';
 //import Screen18 from './screens/Screen18';
@@ -21,11 +21,11 @@ import Anim3 from './screens/Anim3';
 //import Screen20 from './screens/Screen20';
 //import Screen21 from './screens/Screen21';
 //import Backbutton from './screens/Backbutton';
-//import Anim2 from './screens/Anim2';
+import Anim4 from './screens/Anim4';
 
 const index = () => {
     return (
-    <Anim3/>
+    <App/>
     );
 };
 

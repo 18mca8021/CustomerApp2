@@ -11,7 +11,7 @@ const Screen21 = ({navigation}) => {
         <View>
           <View style={styles.bg1}>
             <Image
-              style={styles.direct} source={require('../images/back.png')}
+              style={styles.direct} source={require('../components/images/back.png')}
               onPress={() => navigation.navigate('Screen4')} />
             <Text
               style={styles.txt1}

@@ -10,14 +10,14 @@ const Screen14 = ({navigation}) => {
     return (
         <>
         <SafeAreaView >
-            <Image style={styles.direct} source={require('../images/back2.png')} 
+            <Image style={styles.direct} source={require('../components/images/back2.png')} 
             onPress={() => navigation.navigate('Screen9')}/>
               <Separator/>
               <Separator/>
 
             <StatusBar backgroundColor='#f0f0f0' barStyle='dark-content'/>
 
-        <Image style={styles.img} source={require('../images/calendarbig.png')}/>
+        <Image style={styles.img} source={require('../components/images/calendarbig.png')}/>
          <Text style={styles.txt1}>No Appointment</Text>
          <Text style={styles.txt2}>Booked!</Text>
          <Text style={styles.txt3}>You have not booked any</Text>

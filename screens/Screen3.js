@@ -1,9 +1,9 @@
 import React,{useState} from 'react';
 import { View, Image, StyleSheet, Text, TextInput,TouchableOpacity,SafeAreaView} from 'react-native';
-import Cleartext from './Cleartext';
-import Hide from './Hide';
-import Hide2 from './Hide2';
-import Hide3 from './Hide3';
+import Cleartext from '../components/others/Cleartext';
+import Hide from '../components/others/Hide';
+import Hide2 from '../components/others/Hide2';
+import Hide3 from '../components/others/Hide3';
 
 const Screen3 = ({navigation}) => {
 
@@ -18,7 +18,7 @@ const Screen3 = ({navigation}) => {
         <SafeAreaView>
         <View> 
           <View style={styles.bg}>
-            <Image style={styles.direct} source={require('../images/orizonsmall.png')} />
+            <Image style={styles.direct} source={require('../components/images/orizonsmall.png')} />
             <Separator/>
             </View>
             <SafeAreaView style={styles.bg}>

@@ -10,14 +10,14 @@ const Screen12 = ({navigation}) => {
     return (
         <>
         <SafeAreaView >
-            <Image style={styles.direct} source={require('../images/back2.png')} 
+            <Image style={styles.direct} source={require('../components/images/back2.png')} 
             onPress={() => navigation.navigate('Screen9')}/>
               <Separator/>
               <Separator/>
 
             <StatusBar backgroundColor='#f1f1f1' barStyle='dark-content'/>
 
-         <Image style={styles.img} source={require('../images/ticklogo.png')}/>
+         <Image style={styles.img} source={require('../components/images/ticklogo.png')}/>
          <Text style={styles.txt1}>Your Services has</Text>
          <Text style={styles.txt2}>been booked</Text>
          <Text style={styles.txt3}>Orizon team will accept your booking for</Text>

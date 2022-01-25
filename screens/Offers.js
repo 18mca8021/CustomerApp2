@@ -7,8 +7,8 @@ const Nexthings = () => {
             <Text style={styles.txt}>Offers</Text>
             <ScrollView horizontal={true} style={styles.ScrollViewContainer} >
                 <View style={styles.ImageContain}>
-                    <Image source={require('../images/lastimage.png')} style={styles.ImageConatiner}></Image>
-                    <Image source={require('../images/lastimage.png')} style={styles.ImageConatiner}></Image>
+                    <Image source={require('../components/images/lastimage.png')} style={styles.ImageConatiner}></Image>
+                    <Image source={require('../components/images/lastimage.png')} style={styles.ImageConatiner}></Image>
                     </View>
             </ScrollView>
         </>

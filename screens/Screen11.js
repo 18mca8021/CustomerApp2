@@ -12,7 +12,7 @@ const Screen10 = ({navigation}) => {
         <SafeAreaView >
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../images/back.png')} onPress={() => navigation.navigate('Screen9')}/>
+            <Image style={styles.direct} source={require('../components/images/back.png')} onPress={() => navigation.navigate('Screen9')}/>
             <Text style={styles.txt1}> Payment Method </Text>
             <Separator/>
             </View>
@@ -23,14 +23,14 @@ const Screen10 = ({navigation}) => {
         <View style={styles.bg2}>
           <View>
           <Text style={styles.txt2}>Pay with PayPal</Text>
-          <Image style={styles.img1} source={require('../images/paypalogo.png')}/>
+          <Image style={styles.img1} source={require('../components/images/paypalogo.png')}/>
           <View style={styles.view1}></View>
-          <Image style={styles.img2} source={require('../images/darkradiobutton.png')}/>
+          <Image style={styles.img2} source={require('../components/images/darkradiobutton.png')}/>
 
           <Text style={styles.txt3}>Pay with Cash</Text>
-          <Image style={styles.img3} source={require('../images/cashlogo.png')}/>
+          <Image style={styles.img3} source={require('../components/images/cashlogo.png')}/>
           <View style={styles.view2}></View>
-          <Image style={styles.img4} source={require('../images/blankradiobutton.png')}/>
+          <Image style={styles.img4} source={require('../components/images/blankradiobutton.png')}/>
 
          </View>
 

@@ -10,15 +10,15 @@ const Screen18 = ({navigation}) => {
     return (
         <>
         <SafeAreaView >
-            <Image style={styles.direct} source={require('../images/back2.png')} 
+            <Image style={styles.direct} source={require('../components/images/back2.png')} 
             onPress={() => navigation.navigate('Screen9')}/>
               <Separator/>
               <Separator/>
 
             <StatusBar backgroundColor='#f0f0f0' barStyle='dark-content'/>
 
-         <Image style={styles.img1} source={require('../images/piggybankbg.png')}/>
-         <Image style={styles.img2} source={require('../images/piggybank.png')}/>
+         <Image style={styles.img1} source={require('../components/images/piggybankbg.png')}/>
+         <Image style={styles.img2} source={require('../components/images/piggybank.png')}/>
          <Text style={styles.txt1}>Share with friends</Text>
          <Text style={styles.txt2}>Refer to a friend and earn $5</Text>
          <Text style={styles.txt3}>cash reward.</Text>

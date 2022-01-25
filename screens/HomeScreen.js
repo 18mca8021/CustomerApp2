@@ -19,7 +19,7 @@ const HomeScreen = () => {
       <ScrollView style={styles.bg1} >     
           <View>
             <View style={styles.bg1} >
-              <Image style={styles.direct} source={require('../images/orizonsmall.png')} />
+              <Image style={styles.direct} source={require('../components/images/orizonsmall.png')} />
               <Text style={styles.txt1}
               onPress={() => navigation.navigate('HomeScreenSearch')}>Orizon</Text>
               <Text style={styles.txt2}
@@ -32,7 +32,7 @@ const HomeScreen = () => {
             <View style={styles.bg2}>
                         
             <View style={styles.innerview1}>
-              <Image style={styles.img1} source={require('../images/search.png')} />
+              <Image style={styles.img1} source={require('../components/images/search.png')} />
               <View style={styles.innerview2}>
               <TextInput placeholder='Fault Diagnosis' maxLength={50}/>
               </View>
@@ -40,36 +40,36 @@ const HomeScreen = () => {
             </View>
            <View style={styles.bg2}> 
           
-            <Image source={require('../images/bikerepair.png')} style={styles.img2} 
+            <Image source={require('../components/images/bikerepair.png')} style={styles.img2} 
             ></Image>
 
              <View>
               <View>
-              <Image source={require('../images/generalservicing.png')} style={styles.img3}></Image>
+              <Image source={require('../components/images/generalservicing.png')} style={styles.img3}></Image>
               <Text style={styles.txt3}>General</Text>
               <Text style={styles.txt4}>Servicing</Text>
-              <Image source={require('../images/gearandclutch.png')} style={styles.img4}></Image>
+              <Image source={require('../components/images/gearandclutch.png')} style={styles.img4}></Image>
               <Text style={styles.txt5}>Gear and</Text>
               <Text style={styles.txt6}>Clutch</Text>
-              <Image source={require('../images/res11.png')} style={styles.img5}></Image>
+              <Image source={require('../components/images/res11.png')} style={styles.img5}></Image>
               <Text style={styles.txt7 }>Moto shine</Text>
               <Text style={styles.txt8 }>& polish</Text>                  
-              <Image source={require('../images/res12.png')} style={styles.img6}></Image>
+              <Image source={require('../components/images/res12.png')} style={styles.img6}></Image>
               <Text style={styles.txt9 }>Scheduled</Text>
               <Text style={styles.txt10 }>Service</Text>
               </View>
             </View><View>
               <View>
-              <Image source={require('../images/towingservice.png')} style={styles.img7}></Image>
+              <Image source={require('../components/images/towingservice.png')} style={styles.img7}></Image>
               <Text style={styles.txt11}>Towing</Text>
               <Text style={styles.txt12}>Service</Text>
-              <Image source={require('../images/res21.png')} style={styles.img8}></Image>
+              <Image source={require('../components/images/res21.png')} style={styles.img8}></Image>
               <Text style={styles.txt13 }>Loan</Text>
               <Text style={styles.txt14 }>Request</Text>
-              <Image source={require('../images/res22.png')} style={styles.img9}></Image>
+              <Image source={require('../components/images/res22.png')} style={styles.img9}></Image>
               <Text style={styles.txt15 }>Offers &</Text>
               <Text style={styles.txt16 }>Promotion</Text>
-              <Image source={require('../images/seeall2.png')} style={styles.img10}></Image>
+              <Image source={require('../components/images/seeall2.png')} style={styles.img10}></Image>
               <Text style={styles.txt17 }>See all</Text>
               </View>
             </View>

@@ -12,7 +12,7 @@ const Screen4 = ({navigation}) => {
         <SafeAreaView>
         <View> 
           <View style={styles.bg}>
-            <Image style={styles.direct} source={require('../images/orizonsmall.png')} />
+            <Image style={styles.direct} source={require('../components/images/orizonsmall.png')} />
             <Separator/>
             </View>
             <SafeAreaView style={styles.bg}>

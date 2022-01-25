@@ -78,8 +78,6 @@ class Anim3 extends Component {
                  <Modal animationType={'slide'} transparent={true} visible={this.state.isVisible}
                  onRequestClose={() => {console.log('modal has been closed')}}>
                      <Secondscreen/>
-                     
-                   
                  </Modal>
                  </View>
                  </SafeAreaView>

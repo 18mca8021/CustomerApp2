@@ -14,7 +14,7 @@ const Screen20 = ({navigation}) => {
         <SafeAreaView >
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../images/back.png')} 
+            <Image style={styles.direct} source={require('../components/images/back.png')} 
             onPress={() => navigation.navigate('Screen4')}/>
             <Text style={styles.txt1} onPress={() => navigation.navigate('Screen10')}> #13542 </Text>
             <Separator/>
@@ -29,13 +29,13 @@ const Screen20 = ({navigation}) => {
           <Text style={styles.txt3}>RE classic 350</Text>
           <Text style={styles.txt4}>Cleande and lubricated</Text>
           <Text style={styles.txt5}>$ 39</Text>
-          <Image source={require('../images/separator2.png')} style={styles.sep1}/>
+          <Image source={require('../components/images/separator2.png')} style={styles.sep1}/>
 
           <Text style={styles.txt6}>Disc pad replacement</Text>
           <Text style={styles.txt7}>RE classic 350</Text>
           <Text style={styles.txt8}>Replaced</Text>
           <Text style={styles.txt9}>$ 10</Text>
-          <Image source={require('../images/separator2.png')} style={styles.sep2}/>
+          <Image source={require('../components/images/separator2.png')} style={styles.sep2}/>
           
         </View> 
 

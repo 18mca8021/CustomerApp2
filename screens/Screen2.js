@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { View, Image, StyleSheet, Text, TextInput,TouchableOpacity,SafeAreaView} from 'react-native';
-import Hide from './Hide';
+import Hide from '../components/others/Hide';
 
 const Screen2 = ({navigation}) => {
 
@@ -15,7 +15,7 @@ const Screen2 = ({navigation}) => {
         <SafeAreaView>
         <View> 
           <View style={styles.bg} >
-            <Image style={styles.direct} source={require('../images/orizonsmall.png')} />
+            <Image style={styles.direct} source={require('../components/images/orizonsmall.png')} />
             <Separator/>
           </View>
             <SafeAreaView style={styles.bg}>

@@ -10,13 +10,13 @@ const Screen13 = ({navigation}) => {
     return (
         <>
         <SafeAreaView >
-            <Image style={styles.direct} source={require('../images/back2.png')} 
+            <Image style={styles.direct} source={require('../components/images/back2.png')} 
             onPress={() => navigation.navigate('Screen14')}/>
               <Separator/>
               <Separator/>
             <StatusBar backgroundColor='#f0f0f0' barStyle='dark-content'/>
 
-        <Image style={styles.img} source={require('../images/crossinglogo2.png')}/>
+        <Image style={styles.img} source={require('../components/images/crossinglogo2.png')}/>
          <Text style={styles.txt1}>Oops! Something</Text>
          <Text style={styles.txt2}>went wrong.</Text>
          <Text style={styles.txt3}>Orizon team will accept your booking for</Text>

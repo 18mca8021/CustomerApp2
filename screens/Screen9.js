@@ -18,7 +18,7 @@ const Screen9 = ({navigation}) => {
         <SafeAreaView >
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../images/back.png')} 
+            <Image style={styles.direct} source={require('../components/images/back.png')} 
             onPress={() => navigation.navigate('Screen4')}/>
             <Text style={styles.txt1}
             onPress={() => navigation.navigate('Screen10')}> Cleaning Control </Text>
@@ -31,14 +31,14 @@ const Screen9 = ({navigation}) => {
         <View style={styles.bg2}>
           <View>
           <Text style={styles.txt2}>Chain Lubrication</Text>
-          <Image style={styles.imgclock1} source={require('../images/clock.png')}/>
+          <Image style={styles.imgclock1} source={require('../components/images/clock.png')}/>
           <Text style={styles.txttime1}> 20 min</Text>
           <Text style={styles.txtmore1}>More info</Text>
           <Text style={styles.txtcost1}>$ 39</Text>
           
           
           <Text style={styles.txt3}>Chain Lubrication</Text>
-          <Image style={styles.imgclock2} source={require('../images/clock.png')}/>
+          <Image style={styles.imgclock2} source={require('../components/images/clock.png')}/>
           <Text style={styles.txttime2}> 20 min</Text>
           <Text style={styles.txtmore2}>More info</Text>
           <Text style={styles.txtcost2}>$ 39</Text>
@@ -116,13 +116,13 @@ const Screen9 = ({navigation}) => {
         <Text style={styles.txtsmall13}>07:45</Text>
         <Text style={styles.txtsmall14}>08:30</Text>
 
-        <Image source={require('../images/sidellipse.png')} style={styles.imgline1}></Image>
-        <Image source={require('../images/verticaline.png')} style={styles.imgline2}></Image>
-        <Image source={require('../images/sidellipse.png')} style={styles.imgellipse}></Image>
+        <Image source={require('../components/images/sidellipse.png')} style={styles.imgline1}></Image>
+        <Image source={require('../components/images/verticaline.png')} style={styles.imgline2}></Image>
+        <Image source={require('../components/images/sidellipse.png')} style={styles.imgellipse}></Image>
 
-        <Image source={require('../images/separator2.png')} style={styles.sep1}></Image>
-        <Image source={require('../images/separator2.png')} style={styles.sep2}></Image>
-        <Image source={require('../images/separator1.png')} style={styles.sep3}></Image>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep1}></Image>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep2}></Image>
+        <Image source={require('../components/images/separator1.png')} style={styles.sep3}></Image>
 
         <Separator/>
         <Separator/>

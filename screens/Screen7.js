@@ -17,7 +17,7 @@ const Screen7 = ({navigation}) => {
         <SafeAreaView > 
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../images/back.png')} 
+            <Image style={styles.direct} source={require('../components/images/back.png')} 
             onPress={() => navigation.navigate('Home')}/>
             <Text style={styles.txt1}>Replacement Bike</Text>
             <Separator/>
@@ -31,44 +31,44 @@ const Screen7 = ({navigation}) => {
         <Radio />
         <Radio2/>
         <Radio3/>
-          <Image source={require('../images/bikereplace.png')} style={styles.img}></Image>   
+          <Image source={require('../components/images/bikereplace.png')} style={styles.img}></Image>   
           <Text style={styles.txt2} onPress={() => navigation.navigate('Screen8')}>We got you moving.</Text>
           <Text style={styles.txt3}>Would you like to book a replacement bike till we get your vehicle ready?</Text>   
           <Text style={styles.txt4}>9 Bikes available for you</Text>
           
           <View>
           
-          <Image source={require('../images/bike1.png')} style={styles.imgsmall1} ></Image>
+          <Image source={require('../components/images/bike1.png')} style={styles.imgsmall1} ></Image>
           <Text style={styles.txt1item1}>Class A Bike</Text>
-          <Image source={require('../images/dot.png')} style={styles.img1item1}></Image>
+          <Image source={require('../components/images/dot.png')} style={styles.img1item1}></Image>
           <Text style={styles.txt2item1}> S$ 39</Text>
           <Text style={styles.txt3item1}>/</Text>
           <Text style={styles.txt4item1}>day</Text>
-          <Image source={require('../images/infoicon.png')} style={styles.img2item1}></Image>
-          <Image source={require('../images/separator2.png')} style={styles.sep1}></Image>
+          <Image source={require('../components/images/infoicon.png')} style={styles.img2item1}></Image>
+          <Image source={require('../components/images/separator2.png')} style={styles.sep1}></Image>
           </View>
 
           <View>
-          <Image source={require('../images/bike2.png')} style={styles.imgsmall2}></Image>
+          <Image source={require('../components/images/bike2.png')} style={styles.imgsmall2}></Image>
           <Text style={styles.txt1item2}>Class B Bike</Text>
-          <Image source={require('../images/dot.png')} style={styles.img1item2}></Image>
+          <Image source={require('../components/images/dot.png')} style={styles.img1item2}></Image>
           <Text style={styles.txt2item2}> S$ 29</Text>
           <Text style={styles.txt3item2}>/</Text>
           <Text style={styles.txt4item2}>day</Text>
-          <Image source={require('../images/infoicon.png')} style={styles.img2item2}></Image>
-          <Image source={require('../images/separator2.png')} style={styles.sep2}></Image>
+          <Image source={require('../components/images/infoicon.png')} style={styles.img2item2}></Image>
+          <Image source={require('../components/images/separator2.png')} style={styles.sep2}></Image>
           </View>
 
 
           <View>
-          <Image source={require('../images/bike3.png')} style={styles.imgsmall3}></Image>
+          <Image source={require('../components/images/bike3.png')} style={styles.imgsmall3}></Image>
           <Text style={styles.txt1item3}>Class B Bike</Text>
-          <Image source={require('../images/dot.png')} style={styles.img1item3}></Image>
+          <Image source={require('../components/images/dot.png')} style={styles.img1item3}></Image>
           <Text style={styles.txt2item3}> S$ 29</Text>
           <Text style={styles.txt3item3}>/</Text>
           <Text style={styles.txt4item3}>day</Text>
-          <Image source={require('../images/infoicon.png')} style={styles.img2item3}></Image>
-          <Image source={require('../images/separator2.png')} style={styles.sep3}></Image>
+          <Image source={require('../components/images/infoicon.png')} style={styles.img2item3}></Image>
+          <Image source={require('../components/images/separator2.png')} style={styles.sep3}></Image>
           </View>
 
 
@@ -87,8 +87,8 @@ const Screen7 = ({navigation}) => {
        <View style={StylesContext.container}>
            <Modal  animationType={'slide'} transparent={false} visible={showModal} onRequestClose={() =>{ console.log('Modal has been closed.');}}>
             <View style={styles.modal}>
-            <Image source={require('../images/bigbike.png')} style={styles.imgmodal1}></Image>
-            <Image source={require('../images/bigbikepart.png')} style={styles.imgmodal2}></Image>
+            <Image source={require('../components/images/bigbike.png')} style={styles.imgmodal1}></Image>
+            <Image source={require('../components/images/bigbikepart.png')} style={styles.imgmodal2}></Image>
             <Text style={styles.txtmodal1}>Continental GT </Text>
             <Text style={styles.txtmodal2}>650 CC - Black</Text>
                 <Text style={styles.txtmodal3}>VRN</Text>

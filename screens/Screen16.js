@@ -17,7 +17,7 @@ const Screen16 = ({navigation}) => {
         <StatusBar backgroundColor='#f0f0f0' barStyle='dark-content'/>
          
         <View>
-        <Image style={styles.img1} source={require('../images/profilepic.png')}/>
+        <Image style={styles.img1} source={require('../components/images/profilepic.png')}/>
         <Text style={styles.txt1}>Alfred Alex</Text>
         <Text style={styles.txt2}>alfred@gmail.com</Text>
 
@@ -31,59 +31,59 @@ const Screen16 = ({navigation}) => {
 
       <View>
         <Text style={styles.txt3}>Profile</Text>
-        <Image style={styles.imglogo1} source={require('../images/bikeicon.png')}/>      
+        <Image style={styles.imglogo1} source={require('../components/images/bikeicon.png')}/>      
         <Text style={styles.txt4}>My Bikes</Text>
-        <Image style={styles.imgicon1} source={require('../images/forward2.png')}/>
-        <Image source={require('../images/separator2.png')} style={styles.sep1}/>
+        <Image style={styles.imgicon1} source={require('../components/images/forward2.png')}/>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep1}/>
       </View>
 
       <View>
-        <Image style={styles.imglogo2} source={require('../images/history.png')}/>      
+        <Image style={styles.imglogo2} source={require('../components/images/history.png')}/>      
         <Text style={styles.txt5}>Active Loans</Text>
-        <Image style={styles.imgicon2} source={require('../images/forward2.png')}/>
-        <Image source={require('../images/separator2.png')} style={styles.sep2}/>
+        <Image style={styles.imgicon2} source={require('../components/images/forward2.png')}/>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep2}/>
       </View>
 
       <View>
-        <Image style={styles.imglogo3} source={require('../images/help.png')}/>      
+        <Image style={styles.imglogo3} source={require('../components/images/help.png')}/>      
         <Text style={styles.txt6}>Help Center</Text>
-        <Image style={styles.imgicon3} source={require('../images/forward2.png')}/>
-        <Image source={require('../images/separator2.png')} style={styles.sep3}/>
+        <Image style={styles.imgicon3} source={require('../components/images/forward2.png')}/>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep3}/>
       </View>
 
       <View>
-        <Image style={styles.imglogo4} source={require('../images/share.png')}/>      
+        <Image style={styles.imglogo4} source={require('../components/images/share.png')}/>      
         <Text style={styles.txt7}>Share & Earn</Text>
-        <Image style={styles.imgicon4} source={require('../images/forward2.png')}/>
-        <Image source={require('../images/separator2.png')} style={styles.sep4}/>
+        <Image style={styles.imgicon4} source={require('../components/images/forward2.png')}/>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep4}/>
       </View>
 
       <View>
-        <Image style={styles.imglogo5} source={require('../images/rating.png')}/>      
+        <Image style={styles.imglogo5} source={require('../components/images/rating.png')}/>      
         <Text style={styles.txt8}>Rate us</Text>
-        <Image style={styles.imgicon5} source={require('../images/forward2.png')}/>
-        <Image source={require('../images/separator2.png')} style={styles.sep5}/>
+        <Image style={styles.imgicon5} source={require('../components/images/forward2.png')}/>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep5}/>
       </View>
 
       <View>
-        <Image style={styles.imglogo6} source={require('../images/faq.png')}/>      
+        <Image style={styles.imglogo6} source={require('../components/images/faq.png')}/>      
         <Text style={styles.txt9}>FAQ's</Text>
-        <Image style={styles.imgicon6} source={require('../images/forward2.png')}/>
-        <Image source={require('../images/separator2.png')} style={styles.sep6}/>
+        <Image style={styles.imgicon6} source={require('../components/images/forward2.png')}/>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep6}/>
       </View>
 
       <View>
-        <Image style={styles.imglogo7} source={require('../images/info.png')}/>      
+        <Image style={styles.imglogo7} source={require('../components/images/info.png')}/>      
         <Text style={styles.txt10}>User Information</Text>
-        <Image style={styles.imgicon7} source={require('../images/forward2.png')}/>
-        <Image source={require('../images/separator2.png')} style={styles.sep7}/>
+        <Image style={styles.imgicon7} source={require('../components/images/forward2.png')}/>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep7}/>
       </View>
 
       <View>
-        <Image style={styles.imglogo8} source={require('../images/exit.png')}/>      
+        <Image style={styles.imglogo8} source={require('../components/images/exit.png')}/>      
         <Text style={styles.txt11}>Logout</Text>
-        <Image style={styles.imgicon8} source={require('../images/forward2.png')}/>
-        <Image source={require('../images/separator2.png')} style={styles.sep8}/>
+        <Image style={styles.imgicon8} source={require('../components/images/forward2.png')}/>
+        <Image source={require('../components/images/separator2.png')} style={styles.sep8}/>
       </View>
 
         <Separator/>

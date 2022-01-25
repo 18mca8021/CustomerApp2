@@ -20,8 +20,8 @@ const Screen17 = ({navigation}) => {
         <Text style={styles.txt1} onPress={() => navigation.navigate('Screen16')}>Close</Text>
         <Text style={styles.txt2}>Edit Profile</Text>
         <Text style={styles.txt3} onPress={() => navigation.navigate('Screen18')}>Save</Text>
-        <Image style={styles.img1} source={require('../images/profilepic.png')}/>
-        <Image style={styles.img2} source={require('../images/camera.png')}/>
+        <Image style={styles.img1} source={require('../components/images/profilepic.png')}/>
+        <Image style={styles.img2} source={require('../components/images/camera.png')}/>
         </View>
 
         <View>

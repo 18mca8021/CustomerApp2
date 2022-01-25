@@ -95,11 +95,11 @@ const Screen15 = ({navigation}) => {
          <Text style={styles.txt5}>Bike Wash</Text>
          <Text style={styles.txt6}>25 Nov 21, 03:00 - 4:30 PM</Text>
          <Text style={styles.txt7}>$ 169</Text>
-         <Image style={styles.img1} source={require('../images/star1.png')}/>
-         <Image style={styles.img2} source={require('../images/star1.png')}/>
-         <Image style={styles.img3} source={require('../images/star1.png')}/>
-         <Image style={styles.img4} source={require('../images/star1.png')}/>
-         <Image style={styles.img5} source={require('../images/star2.png')}/>
+         <Image style={styles.img1} source={require('../components/images/star1.png')}/>
+         <Image style={styles.img2} source={require('../components/images/star1.png')}/>
+         <Image style={styles.img3} source={require('../components/images/star1.png')}/>
+         <Image style={styles.img4} source={require('../components/images/star1.png')}/>
+         <Image style={styles.img5} source={require('../components/images/star2.png')}/>
          <View style={styles.fixToText}>
             <TouchableOpacity style={styles.appButtonContainer6} 
             onPress={() => navigation.navigate('Screen11')}>

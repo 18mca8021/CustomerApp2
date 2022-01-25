@@ -12,7 +12,7 @@ export default function UploadImage() {
                 }
                     <View style={imageUploaderStyles.uploadBtnContainer}>
                         <TouchableOpacity onPress={addImage} style={imageUploaderStyles.uploadBtn} >
-                        <Image style={imageUploaderStyles.img} source={require('../images/uploadicon.png')}/>
+                        <Image style={imageUploaderStyles.img} source={require('../components/images/uploadicon.png')}/>
                         </TouchableOpacity>
                     </View>
             </View>

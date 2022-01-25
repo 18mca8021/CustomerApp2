@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { View, Image, StyleSheet, Text, TextInput,TouchableOpacity,SafeAreaView} from 'react-native';
-import Hide from './Hide';
+import Hide from '../components/others/Hide';
 
 const Secondscreen = ({navigation}) => {
 
