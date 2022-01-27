@@ -12,6 +12,7 @@ const Login = () => {
   const [showModal,setShowModal] = useState(true);
   return (
         <>
+        
         <SafeAreaView style={styles.safearea1}>
         <View> 
             <SafeAreaView style={styles.safearea2}>

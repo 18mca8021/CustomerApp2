@@ -12,7 +12,7 @@ const Secondscreen = ({navigation}) => {
 
     return (
         <>
-        <SafeAreaView style={{marginTop:100}} >
+        <SafeAreaView style={{marginTop:100}}>
         <View> 
             <SafeAreaView style={styles.bg}>
             <View style={styles.boundary}>

@@ -20,7 +20,8 @@ const Signup = () => {
             <SafeAreaView style={styles.bg}>
             <View style={styles.boundary}>
             <Separator/>
-            <Text style={styles.txt1}>Sign up</Text>
+            <Text style={styles.txt1}
+            onPress={() => { setShowModal(!showModal);}}>Sign up</Text>
             <Separator/>
             <Separator/>
             <Separator/>
@@ -29,7 +30,7 @@ const Signup = () => {
             <Cleartext/></View>
             <Text style={styles.txt2}>Vehicle Registration Number</Text>
             <View style={styles.innerview}>
-            <TextInput placeholder='enter VRN' style={styles.txtin} /></View>
+            <TextInput placeholder='enter vehicle regn number' style={styles.txtin} /></View>
             <Text style={styles.txt2}>Mobile Number</Text>
             <View style={styles.innerview}>
             <Hide/></View>

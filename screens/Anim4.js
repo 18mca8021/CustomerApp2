@@ -1,13 +1,13 @@
 import React,{useState} from 'react'; 
 import {Animated,View,TouchableOpacity,Easing,Text,TextInput,Modal,
-StyleSheet, SafeAreaView,StatusBar} from 'react-native';
+StyleSheet, SafeAreaView,StatusBar, Pressable} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import Login from '../components/modals/Login';
-//import Signup from '../components/modals/Signup';
+import Signup from '../components/modals/Signup';
 
 const bgImage = require('../components/images/orizonbig.png');
   const Anim4 =() => {
-    const navigation = useNavigation();
+  const navigation = useNavigation();
   const [showModal,setShowModal] = useState(false);
   const animatedValue = new Animated.Value(0);
   const Separator = () => (
@@ -33,7 +33,8 @@ const bgImage = require('../components/images/orizonbig.png');
           <View style={styles.view1}>            
             
             <TouchableOpacity style={styles.appButtonContainer1} 
-              onPress={handleAnimation} onPressIn={() =>{setShowModal(!showModal);}}  >
+              onPress={handleAnimation} onPressIn={() =>{setShowModal(!showModal);}} 
+              >
               <Text style={styles.appButtonText1}>Log In</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.appButtonContainer2} 
@@ -73,23 +74,26 @@ const bgImage = require('../components/images/orizonbig.png');
                             })
                         },
                       ]
-                  }}/>
+                  }}/>            
             
-
-            
-        <SafeAreaView style={styles.safearea2}>        
-        <View style={styles.container2}>
-          <Modal animationType={'slide'} transparent={true} visible={showModal} 
+    <SafeAreaView style={styles.safearea2}>        
+      <View style={styles.container2}>  
+       <Modal animationType={'slide'} transparent={true} visible={showModal} 
             onRequestClose={() =>{ console.log('Modal has been closed.');}}>
-        
-           <Login/>
-        
-          </Modal>
-       </View>
-      </SafeAreaView>
+        <Login/>  
+       </Modal>  
+       {/*<Modal animationType={'fade'} transparent={true} visible={showModal} 
+            onRequestClose={() =>{ console.log('Modal has been closed.');}}>
+        <Login/>   
+       </Modal>*/}  
+       {/*<Pressable style={{display:'flex',height:60,borderRadius:6,backgroundColor:'#009688'}} onPress={() =>{setShowModal(!showModal);}}>
+         <Text style={{fontSize:22,fontWeight:'bold'}}>open modal</Text>
+       </Pressable>*/}
+      </View>
+    </SafeAreaView>
 
-            </View>
-            </SafeAreaView>
+          </View>
+          </SafeAreaView>
       </>
   );
 }
