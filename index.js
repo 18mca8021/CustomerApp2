@@ -21,7 +21,8 @@ import App from './App';
 //import Screen20 from './screens/Screen20';
 //import Screen21 from './screens/Screen21';
 //import Backbutton from './screens/Backbutton';
-import Anim4 from './screens/Anim4';
+//import Anim4 from './screens/Anim4';
+//import OtpScreen from './components/others/otp/OtpScreen';
 
 const index = () => {
     return (

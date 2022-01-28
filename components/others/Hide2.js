@@ -1,60 +1,36 @@
 import React, { useState } from "react";
-import {
-  SafeAreaView,
-  StyleSheet,
-  View,
-  TextInput,
-  TouchableOpacity,
-  Image,
-} from "react-native";
+import {TextInput,View,StyleSheet} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+//import eye from '../images/eyecross.png';
 
 const Hide = () => {
-  const [text, setText] = useState("");
-  const [hidePass, setHidePass] = useState(true);
-  return (
-    <>
-        <View>
-          <TextInput
-            placeholder="enter mobile number again"
-            style={styles.textInput}
-            value={text}
-            secureTextEntry={hidePass ? true:false} 
-            keyboardType='numeric'
-            onChangeText={(value) => setText(value)}
-          />
-          <TouchableOpacity
-            style={styles.closeButtonParent}
-            onPress={() => setText("")}
-          >
-            <Image
-              style={styles.closeButton}
-              source={require("../images/eyecross.png")}
-            />
-          </TouchableOpacity>
-        </View>
+const [hidePass,setHidePass] = useState(true);
+ 
+return (
+  <>
+      <View>
+        <TextInput placeholder="enter mobile number again"
+           secureTextEntry={hidePass ? true:false}
+           style={styles.textInput}
+           keyboardType='numeric'/>
+          <Icon name={hidePass ? 'eye-slash':'eye'} size={17} color='grey'
+           onPress={() => setHidePass(!hidePass)}
+           style={styles.closeButton}/>
+      </View>
       </>
   );
 };
 
+
 const styles = StyleSheet.create({
   textInput: {
-    height: 40,
-    width: "90%",
-    marginHorizontal:10
+    top:10,
+    left:10
   },
   closeButton: {
-    height: 16,
-    width: 16,
-    position:'absolute'
-  },
-  closeButtonParent: {
-    justifyContent: "center",
-    alignItems: "center",
-    marginRight: 5,
-    marginLeft:280,
+    left:275,
     bottom:20
-
   },
-});
+})
 
 export default Hide;

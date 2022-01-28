@@ -4,6 +4,7 @@ import Cleartext from '../components/others/Cleartext';
 import Hide from '../components/others/Hide';
 import Hide2 from '../components/others/Hide2';
 import Hide3 from '../components/others/Hide3';
+import Hide4 from '../components/others/Hide4';
 
 const Screen3 = ({navigation}) => {
 
@@ -28,15 +29,15 @@ const Screen3 = ({navigation}) => {
             <Separator/>
             <Separator/>
             <Separator/>
-            <Text style={styles.txt2} maxLength={50}>Full Name</Text>
+            <Text style={styles.txt2} maxLength={50}>Name</Text>
             <View style={styles.innerview}>
             <Cleartext/></View>
             <Text style={styles.txt2}>Vehicle Registration Number</Text>
             <View style={styles.innerview}>
-            <TextInput placeholder='enter VRN' style={styles.txtin} /></View>
+            <TextInput placeholder='enter vehicle regn number' style={styles.txtin} /></View>
             <Text style={styles.txt2}>Mobile Number</Text>
             <View style={styles.innerview}>
-            <Hide/></View>
+            <Hide4/></View>
             <Text style={styles.txt2}>Confirm Mobile Number</Text>
             <View style={styles.innerview}>
             <Hide2/></View>

@@ -14,7 +14,7 @@ const Cleartext = () => {
     <>
         <View >
           <TextInput
-            placeholder="enter fullname"
+            placeholder="enter name"
             style={styles.textInput}
             value={text}
             onChangeText={(value) => setText(value)}

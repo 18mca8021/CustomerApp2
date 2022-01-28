@@ -1,18 +1,17 @@
 import React, { useState } from "react";
-import {SafeAreaView,StyleSheet,View,TextInput,TouchableOpacity,Image,} from "react-native";
+import {SafeAreaView,StyleSheet,View,TextInput,TouchableOpacity,Image,Text} from "react-native";
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-const Hide3 = () => {
+const Hide4 = () => {
   const [hidePass, setHidePass] = useState(true);
+  
   return (
     <>
         <View>
           <TextInput
-            placeholder="enter chassis number"
+            placeholder="enter mobile number"
             style={styles.textInput}
-            secureTextEntry={hidePass ? true:false} 
-            keyboardType='numeric'
-          />
+            keyboardType='numeric'/>
           <Icon name={hidePass ? 'eye-slash':'eye'} size={17} color='grey'
            onPress={() => setHidePass(!hidePass)}
            style={styles.closeButton}/>
@@ -25,7 +24,7 @@ const styles = StyleSheet.create({
   textInput: {
     height: 40,
     width: "90%",
-    marginHorizontal:10
+    marginHorizontal:10,
   },
   closeButton: {
     position:'absolute',
@@ -34,4 +33,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Hide3;
+export default Hide4;

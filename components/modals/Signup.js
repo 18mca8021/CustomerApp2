@@ -6,6 +6,7 @@ import Cleartext from '../others/Cleartext';
 import Hide2 from '../others/Hide2';
 import Hide3 from '../others/Hide3';
 import { useNavigation } from '@react-navigation/native';
+import Hide4 from '../others/Hide4';
 
 const Signup = () => {
   const navigation = useNavigation();
@@ -25,7 +26,7 @@ const Signup = () => {
             <Separator/>
             <Separator/>
             <Separator/>
-            <Text style={styles.txt2} maxLength={50}>Full Name</Text>
+            <Text style={styles.txt2} maxLength={50}>Name</Text>
             <View style={styles.innerview}>
             <Cleartext/></View>
             <Text style={styles.txt2}>Vehicle Registration Number</Text>
@@ -33,7 +34,7 @@ const Signup = () => {
             <TextInput placeholder='enter vehicle regn number' style={styles.txtin} /></View>
             <Text style={styles.txt2}>Mobile Number</Text>
             <View style={styles.innerview}>
-            <Hide/></View>
+            <Hide4/></View>
             <Text style={styles.txt2}>Confirm Mobile Number</Text>
             <View style={styles.innerview}>
             <Hide2/></View>
