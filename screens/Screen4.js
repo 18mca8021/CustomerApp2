@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { View, Image, StyleSheet, Text, TextInput,TouchableOpacity,SafeAreaView} from 'react-native';
+import OtpScreen from '../components/others/OtpScreen';
 
 const Screen4 = ({navigation}) => {
 
@@ -25,7 +26,8 @@ const Screen4 = ({navigation}) => {
             <Separator/>
             
             <View style={styles.innerview}>
-            <TextInput placeholder='enter otp' keyboardType='numeric' style={styles.txtin} maxLength={6}/>
+            {/*<TextInput placeholder='enter otp' keyboardType='numeric' style={styles.txtin} maxLength={6}/>*/}
+            <OtpScreen/>
             </View>
             <View style={styles.fixToText}>
             <Separator/>
@@ -99,7 +101,7 @@ const styles = StyleSheet.create({
     appButtonContainer:{
       elevation:8,
       backgroundColor:"#f2994a",
-      borderRadius:10,
+      borderRadius:17,
       paddingVertical:15,
       paddingHorizontal:12,
       margin: 20,
@@ -118,9 +120,7 @@ const styles = StyleSheet.create({
   innerview:{
     flexDirection:'row',
     alignItems:'center',
-    borderWidth:1.5,
     height:40,
-    borderRadius:10,
     margin:5,
     marginVertical:10,
     marginHorizontal:25
@@ -133,12 +133,13 @@ const styles = StyleSheet.create({
     color:'black',
     textTransform:'none',
     fontWeight:'bold',
-    fontSize:30
+    fontSize:25,
+    right:30
   },
   txt2:{
     alignSelf:'center',
     color:'#808080',
-    left:-16
+    left:-20
   }
 });
 

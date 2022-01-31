@@ -2,6 +2,7 @@ import React from 'react';
 import { AppRegistry } from 'react-native';  
 import {name as appName} from './app.json';
 import App from './App';
+//import OtpScreen2 from './components/others/otp/OtpScreen2';
 //import Anim3 from './screens/Anim3';
 //import Screen16 from './screens/Screen16';
 //import Screen17 from './screens/Screen17';

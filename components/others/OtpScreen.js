@@ -13,7 +13,7 @@ const OtpScreen = () => {
     return (
         <>
         <SafeAreaView style={styles.root}>
-            <Text style={styles.title}>Underlined OTP example</Text>
+            
             <CodeField
             ref={ref} {...props} value={value} onChangeText={setValue}
             cellCount={CELL_COUNT}
@@ -35,8 +35,8 @@ const OtpScreen = () => {
 
 const styles = StyleSheet.create({
     root:{
-       padding:20,
-       minHeight:300, 
+       padding:10,
+       minHeight:200, 
        alignContent:'space-between'
     },
     title:{
@@ -44,30 +44,30 @@ const styles = StyleSheet.create({
        fontSize:30
     },
     CodeFieldRoot:{
-        marginTop:20,
-        width:280,
-        marginLeft:10,
+        marginTop:50,
+        width:300,
+        marginLeft:25,
         marginRight:10,
-        
+        right:30
     },
     cellRoot:{
-        width:60,
+        width:40,
         height:60,
-        justifyContent:'center',
+        justifyContent:'flex-start',
         alignItems:'center',
-        borderBottomColor:'#ccc',
+        borderBottomColor:'#000',
         borderBottomWidth:3,
-        
     },
     cellText:{
         color:'#000',
-        fontSize:36,
-        textAlign:'center',
-        
+        fontSize:22,
+        marginTop:15,
+        alignSelf:'auto'
     },
     focusCell:{
-        borderBottomColor:'#007AFF',
-        borderBottomWidth:2
+        borderBottomColor:'#000',
+        borderBottomWidth:3,
+        
     }
 });
 

@@ -5,7 +5,7 @@ const Nexthings = () => {
     return (
         <>
             <Text style={styles.txt1}>Next Thing on Your Mind</Text>
-            <ScrollView horizontal={true} style={styles.ScrollViewContainer} >
+            <ScrollView horizontal={true} style={styles.ScrollViewContainer} showsHorizontalScrollIndicator={false}>
                 <View style={styles.ImageContain}>
                     <Image source={require('../components/images/hd.png')} style={styles.ImageConatiner}></Image>
                     <Text style={styles.txt2}>Motorcycle</Text>

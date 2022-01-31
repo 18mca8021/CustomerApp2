@@ -7,7 +7,7 @@ const Besthings = () => {
             <Text style={styles.txt1}
             >Our Best Services</Text>
             <Text style={styles.txt2}>See All</Text>
-            <ScrollView horizontal={true} style={styles.ScrollViewContainer} >
+            <ScrollView horizontal={true} style={styles.ScrollViewContainer} showsHorizontalScrollIndicator={false}>
                 <View style={styles.ImageContain}>
                     <Image source={require('../components/images/machine.png')} style={styles.ImageConatiner}></Image>
                     <Text style={styles.txt3}>Air Filter</Text>
