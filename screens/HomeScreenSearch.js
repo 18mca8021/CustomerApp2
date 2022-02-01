@@ -32,7 +32,7 @@ const HomeScreenSearch = (props) => {
              onPress={() => props.navigation.goBack()}>
             <Image style={styles.direct} source={require('../components/images/back.png')} />
             </TouchableOpacity>
-            <Text style={styles.txt1}
+            <Text style={styles.txt1} onPress={() => navigation.navigate('Screen5')}
             >Search Services</Text>
             
             <Separator/>
@@ -45,7 +45,9 @@ const HomeScreenSearch = (props) => {
             <View style={styles.bg2}>
                         
             <View style={styles.view1}>
+              <TouchableOpacity onPress={() => navigation.navigate('Screen5')}>
               <Image style={styles.img} source={require('../components/images/search.png')} />
+              </TouchableOpacity>
               <View style={styles.view2}>
               <TextInput placeholder='Enter Search Text' maxLength={50}/>
               </View>

@@ -1,25 +1,44 @@
 import * as React from 'react';
-import { View, Image, StyleSheet, Text, TextInput,TouchableOpacity,SafeAreaView,Modal} from 'react-native';
+import { View, Image, StyleSheet, Text, TextInput,TouchableOpacity,SafeAreaView,Modal,BackHandler} from 'react-native';
 import { StylesContext } from '@material-ui/styles';
 import {useState} from 'react';
-import Radio  from './Radio';
-import Radio2 from './Radio2';
-import Radio3 from './Radio3';
+import { useFocusEffect,useNavigation } from '@react-navigation/native';
+import Radio  from '../components/others/Radio';
+import Radio2 from '../components/others/Radio2';
+import Radio3 from '../components/others/Radio3';
+import BikeDetails from '../components/modals/BikeDetails';
 
-const Screen7 = ({navigation}) => {
+const Screen7 = (props) => {
+  const navigation = useNavigation();
   const [showModal,setShowModal] = useState(false);
     const Separator = () => (
         <View style={styles.separator} />
       );
+
+      useFocusEffect(
+        React.useCallback(() => {
+            const onBackPress = () => {
+               //alert('Back Press handled and doing no action');
+               'hardwareBackPress',
+                onBackPress
+            };
+            BackHandler.addEventListener(
+                'hardwareBackPress',
+                onBackPress
+            );
+        },[]),
+    );
 
     return (
         <>
         <SafeAreaView > 
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../components/images/back.png')} 
-            onPress={() => navigation.navigate('Home')}/>
-            <Text style={styles.txt1}>Replacement Bike</Text>
+          <TouchableOpacity
+             onPress={() => props.navigation.goBack()}>
+            <Image style={styles.direct} source={require('../components/images/back.png')} />
+            </TouchableOpacity>
+            <Text style={styles.txt1} onPress={() => navigation.navigate('Screen8')}>Replacement Bike</Text>
             <Separator/>
             </View>
            
@@ -86,30 +105,7 @@ const Screen7 = ({navigation}) => {
       <SafeAreaView style={styles.safearea}>        
        <View style={StylesContext.container}>
            <Modal  animationType={'slide'} transparent={false} visible={showModal} onRequestClose={() =>{ console.log('Modal has been closed.');}}>
-            <View style={styles.modal}>
-            <Image source={require('../components/images/bigbike.png')} style={styles.imgmodal1}></Image>
-            <Image source={require('../components/images/bigbikepart.png')} style={styles.imgmodal2}></Image>
-            <Text style={styles.txtmodal1}>Continental GT </Text>
-            <Text style={styles.txtmodal2}>650 CC - Black</Text>
-                <Text style={styles.txtmodal3}>VRN</Text>
-                <Text style={styles.txtmodal4}>Run till now</Text>
-                <Text style={styles.txtmodal5}>Cost per day</Text>
-                <Text style={styles.txtmodal6}>Cubic Capacity</Text>
-                <Text style={styles.txtmodal7}>0-60kmph</Text>
-                <Text style={styles.txtmodal8}>5478456541</Text>
-                <Text style={styles.txtmodal9}>5000 km</Text>
-                <Text style={styles.txtmodal10}>S$16.00</Text>
-                <Text style={styles.txtmodal11}>650cc</Text>
-                <Text style={styles.txtmodal12}>4.5s</Text>
-                <Separator/>
-                <Text style={styles.txtmodal13}
-                onPress={() => { setShowModal(!showModal);}}>Terms & Conditions</Text>
-                <Separator/>
-                <Separator/>
-                <Separator/>
-                <Separator/>
-                <Separator/>
-                </View>
+            <BikeDetails/>
             </Modal>
        </View>
       </SafeAreaView>
@@ -213,16 +209,6 @@ const styles = StyleSheet.create({
     backgroundColor:'#ec4344',
     marginTop:120,
     width:50,
-    height:100,
-    
-  },
-  modal:{
-      flex:0,
-      alignItems:'center',
-      backgroundColor:'00ff00',
-      padding:100,
-      marginTop:50,
-      margin:0
   },
   text:{ 
       color:'#3f2979',
@@ -417,100 +403,6 @@ const styles = StyleSheet.create({
     right:227,
     bottom:40 
   },
-  txtmodal1:{
-    bottom:100,
-    alignSelf:'flex-start',
-    color:'white',
-    fontSize:18,
-    position:'relative',
-    end:40
-  },
-  txtmodal2:{
-  bottom:125,
-  alignSelf:'flex-end',
-  color:'white',
-  fontSize:18,
-  position:'relative',
-  start:40
-},
-  txtmodal3:{
-    bottom:70,
-    alignItems:'flex-start',
-    color:'black',
-    right:130,
-    fontSize:18
-  },
-  txtmodal4:{
-    bottom:60,
-    alignItems:'flex-start',
-    color:'black',
-    right:102,
-    fontSize:18
-  },
-  txtmodal5:{
-    bottom:50,
-    alignItems:'flex-start',
-    color:'black',
-    right:98,
-    fontWeight:'bold',
-    fontSize:18
-  },
-  txtmodal6:{
-    bottom:40,
-    alignItems:'flex-start',
-    color:'black',
-    right:89,
-    fontSize:18
-  },
-  txtmodal7:{
-    bottom:30,
-    alignItems:'flex-start',
-    color:'black',
-    right:108,
-    fontSize:18
-  },
-  txtmodal8:{
-    top:-192.5,
-    alignSelf:'flex-start',
-    color:'black',
-    left:127,
-    fontSize:18
-  },
-  txtmodal9:{
-    top:-182.5,
-    alignSelf:'flex-end',
-    color:'black',
-    left:65,
-    fontSize:18
-  },
-  txtmodal10:{
-    top:-172.5,
-    alignSelf:'flex-end',
-    color:'black',
-    left:70,
-    fontWeight:'bold',
-    fontSize:18
-  },
-  txtmodal11:{
-    top:-162.5,
-    alignSelf:'flex-end',
-    color:'black',
-    left:70,
-    fontSize:18
-  },
-  txtmodal12:{
-    top:-152.5,
-    alignSelf:'flex-end',
-    color:'black',
-    left:70,
-    fontSize:18
-  },
-  txtmodal13:{
-    bottom:140,
-    alignSelf:'center',
-    color:'rgba(0, 122, 255, 1)', 
-    fontSize:13
-  },
     bg1:{
     backgroundColor:'#000000'
   },
@@ -518,7 +410,10 @@ const styles = StyleSheet.create({
     backgroundColor:'#ffffff'
   },
   safearea:{
-    flex:0
+    flex:1,
+    marginTop:600,
+    backgroundColor:'#000',
+    height:1000
   },
   img:{ 
     width: 315, 
@@ -591,21 +486,7 @@ const styles = StyleSheet.create({
     height:25,
     width:25,
     bottom:368
-  },
-  imgmodal1:{ 
-    width: 300, 
-    height: 200, 
-    margin: 10, 
-    borderRadius: 25,
-    marginTop:-110
-   },
-  imgmodal2:{ 
-    width: 300, 
-    height: 50,
-    bottom:60,
-    borderBottomLeftRadius:25,
-    borderBottomRightRadius:25
-   },  
+  },  
   sep1:{
     position: 'absolute', 
     bottom:265,

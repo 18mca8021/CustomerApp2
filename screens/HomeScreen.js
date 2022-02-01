@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { View, Image, StyleSheet, Text, TextInput, SafeAreaView, ScrollView,TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import Nexthings from './Nexthings';
-import Besthings from './Besthings';
-import Offers from './Offers';
+import Nexthings from '../components/others/Nexthings';
+import Besthings from '../components/others/Besthings';
+import Offers from '../components/others/Offers';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -32,7 +32,9 @@ const HomeScreen = () => {
             <View style={styles.bg2}>
                         
             <View style={styles.innerview1}>
+            <TouchableOpacity onPress={() => navigation.navigate('HomeScreenSearch')}>
               <Image style={styles.img1} source={require('../components/images/search.png')} />
+              </TouchableOpacity>
               <View style={styles.innerview2}>
               <TextInput placeholder='Fault Diagnosis' maxLength={50}/>
               </View>

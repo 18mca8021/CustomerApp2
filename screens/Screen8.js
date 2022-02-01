@@ -1,20 +1,37 @@
 import * as React from 'react';
-import { View, Image, StyleSheet, Text,TouchableOpacity,SafeAreaView,} from 'react-native';
+import { View, Image, StyleSheet, Text,TouchableOpacity,SafeAreaView,BackHandler} from 'react-native';
 import UploadImage from './UploadImage';
+import { useFocusEffect,useNavigation } from '@react-navigation/native';
 
-const Screen8 = ({navigation}) => {
-
+const Screen8 = (props) => {
+  const navigation = useNavigation();
     const Separator = () => (
         <View style={styles.separator} />
       );
+
+      useFocusEffect(
+        React.useCallback(() => {
+            const onBackPress = () => {
+               //alert('Back Press handled and doing no action');
+               'hardwareBackPress',
+                onBackPress
+            };
+            BackHandler.addEventListener(
+                'hardwareBackPress',
+                onBackPress
+            );
+        },[]),
+    );
 
     return (
         <>
         <SafeAreaView >
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../components/images/back.png')} 
-            onPress={() => navigation.navigate('Screen4')}/>
+          <TouchableOpacity
+             onPress={() => props.navigation.goBack()}>
+            <Image style={styles.direct} source={require('../components/images/back.png')} />
+            </TouchableOpacity>
             <Text style={styles.txt1}> Service Details</Text>
             <Separator/>
             </View>

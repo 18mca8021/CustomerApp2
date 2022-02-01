@@ -1,11 +1,27 @@
 import * as React from 'react';
-import { View, Image, StyleSheet, Text, TextInput,SafeAreaView,ScrollView,TouchableOpacity} from 'react-native';
+import { View, Image, StyleSheet, Text, TextInput,SafeAreaView,ScrollView,TouchableOpacity,BackHandler} from 'react-native';
+import { useFocusEffect,useNavigation } from '@react-navigation/native';
 
-const Screen5 = ({navigation}) => {
+const Screen5 = (props) => {
+  const navigation = useNavigation();
 
     const Separator = () => (
         <View style={styles.separator} />
       );
+
+      useFocusEffect(
+        React.useCallback(() => {
+            const onBackPress = () => {
+               //alert('Back Press handled and doing no action');
+               'hardwareBackPress',
+                onBackPress
+            };
+            BackHandler.addEventListener(
+                'hardwareBackPress',
+                onBackPress
+            );
+        },[]),
+    );
 
     return (
         <>
@@ -17,7 +33,7 @@ const Screen5 = ({navigation}) => {
              onPress={() => props.navigation.goBack()}>
             <Image style={styles.direct} source={require('../components/images/back.png')} />
             </TouchableOpacity>
-            <Text style={styles.txt1}>Services</Text>
+            <Text style={styles.txt1} onPress={() => navigation.navigate('Screen6')}>Services</Text>
             <Separator/>
             </View>
            
@@ -39,9 +55,11 @@ const Screen5 = ({navigation}) => {
           <Text style={styles.txt2}>Include visiting charges</Text>
           <Text style={styles.txt3}
           onPress={() => navigation.navigate('Screen6')}>General Servicing</Text>
-          </View> 
-          <Image source={require('../components/images/forward.png')} style={styles.imgarrow1}
-           onPress={() => navigation.navigate('Screen7')}></Image>
+          </View>
+          <TouchableOpacity
+            onPress={() => props.navigation.goBack()}>
+          <Image source={require('../components/images/forward.png')} style={styles.imgarrow1}/>
+          </TouchableOpacity>
           <Image source={require('../components/images/separator2.png')} style={styles.sep1}></Image>
 
           <View>
@@ -215,7 +233,7 @@ const styles = StyleSheet.create({
     marginStart: 305,
     height:30,
     width:30,
-    bottom:495 
+    bottom:15 
   },
   imgarrow2:{
     position: 'absolute', 

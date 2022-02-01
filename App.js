@@ -22,7 +22,6 @@ import Screen18 from './screens/Screen18';
 import Screen19 from './screens/Screen19';
 import Screen20 from './screens/Screen20';
 import Screen21 from './screens/Screen21';
-import Backbutton from './screens/Backbutton';
 import Anim4 from './screens/Anim4';
 import Secondscreen from './screens/Secondscreen';
 import Login from './components/modals/Login';
@@ -60,7 +59,6 @@ export  default function App(){
         <Stack.Screen name="Screen19" component={Screen19} options={{headerShown:false}}/>
         <Stack.Screen name="Screen20" component={Screen20} options={{headerShown:false}}/>
         <Stack.Screen name="Screen21" component={Screen21} options={{headerShown:false}}/>
-        <Stack.Screen name="Backbutton" component={Backbutton} options={{headerShown:true}}/>
         <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>  
 
         <Stack.Screen name="Secondscreen" component={Secondscreen} options={{headerShown:false}}/>  

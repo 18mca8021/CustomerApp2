@@ -9,6 +9,8 @@ const bgImage = require('../components/images/orizonbig.png');
   const Anim4 =() => {
   const navigation = useNavigation();
   const [showModal,setShowModal] = useState(false);
+  const [showModal2,setShowModal2] = useState(false);
+
   const animatedValue = new Animated.Value(0);
   const Separator = () => (
     <View style={styles.separator} />
@@ -21,8 +23,16 @@ const bgImage = require('../components/images/orizonbig.png');
         easing:Easing.ease,
         useNativeDriver:false
     }).start()
-}
+} 
 
+  const showLogin = () => {    
+    setShowModal(!showModal)
+  }
+
+  const showSignup = () => {
+    handleAnimation,
+    setShowModal2(!showModal2);
+  }
 
   return (
       <>
@@ -33,12 +43,13 @@ const bgImage = require('../components/images/orizonbig.png');
           <View style={styles.view1}>            
             
             <TouchableOpacity style={styles.appButtonContainer1} 
-              onPress={handleAnimation} onPressIn={() =>{setShowModal(!showModal);}} 
+              onPressIn={() => setShowModal(!showModal)} onPress={handleAnimation}  
               >
               <Text style={styles.appButtonText1}>Log In</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.appButtonContainer2} 
-              onPress={handleAnimation} onPressIn={() => navigation.navigate('Screen3')} >
+              onPressIn={() => setShowModal2(!showModal2)} onPress={handleAnimation} 
+              >
               <Text style={styles.appButtonText2}>Sign Up</Text>
             </TouchableOpacity>
             <View style={styles.view2}>
@@ -82,10 +93,10 @@ const bgImage = require('../components/images/orizonbig.png');
             onRequestClose={() =>{ console.log('Modal has been closed.');}}>
         <Login/>  
        </Modal>  
-       {/*<Modal animationType={'fade'} transparent={true} visible={showModal} 
+       <Modal animationType={'slide'} transparent={true} visible={showModal2} 
             onRequestClose={() =>{ console.log('Modal has been closed.');}}>
-        <Login/>   
-       </Modal>*/}  
+        <Signup/>   
+       </Modal>
        {/*<Pressable style={{display:'flex',height:60,borderRadius:6,backgroundColor:'#009688'}} onPress={() =>{setShowModal(!showModal);}}>
          <Text style={{fontSize:22,fontWeight:'bold'}}>open modal</Text>
        </Pressable>*/}

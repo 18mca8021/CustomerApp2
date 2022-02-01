@@ -7,13 +7,13 @@ const Nexthings = () => {
             <Text style={styles.txt1}>Next Thing on Your Mind</Text>
             <ScrollView horizontal={true} style={styles.ScrollViewContainer} showsHorizontalScrollIndicator={false}>
                 <View style={styles.ImageContain}>
-                    <Image source={require('../components/images/hd.png')} style={styles.ImageConatiner}></Image>
+                    <Image source={require('../images/hd.png')} style={styles.ImageConatiner}></Image>
                     <Text style={styles.txt2}>Motorcycle</Text>
                     <Text style={styles.txt3}>Financing</Text>
-                    <Image source={require('../components/images/dashboard.png')} style={styles.ImageConatiner}></Image>
+                    <Image source={require('../images/dashboard.png')} style={styles.ImageConatiner}></Image>
                     <Text style={styles.txt4}>COE</Text>
                     <Text style={styles.txt5}>Financing</Text>
-                    <Image source={require('../components/images/bikefront.png')} style={styles.ImageConatiner}></Image>
+                    <Image source={require('../images/bikefront.png')} style={styles.ImageConatiner}></Image>
                     <Text style={styles.txt6}>RE</Text>
                     <Text style={styles.txt7}>Financing</Text>
                 </View>
