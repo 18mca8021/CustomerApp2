@@ -57,7 +57,7 @@ const Screen5 = (props) => {
           onPress={() => navigation.navigate('Screen6')}>General Servicing</Text>
           </View>
           <TouchableOpacity
-            onPress={() => props.navigation.goBack()}>
+            onPress={() => navigation.navigate('Screen6')}>
           <Image source={require('../components/images/forward.png')} style={styles.imgarrow1}/>
           </TouchableOpacity>
           <Image source={require('../components/images/separator2.png')} style={styles.sep1}></Image>

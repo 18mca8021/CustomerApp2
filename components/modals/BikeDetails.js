@@ -11,6 +11,7 @@ const BikeDetails = () => {
   const [showModal,setShowModal] = useState(true);
   return (
         <>
+        <View style={styles.modalboundary}>
         <View style={styles.modal}>
             <Image source={require('../images/bigbike.png')} style={styles.imgmodal1}></Image>
             <Image source={require('../images/bigbikepart.png')} style={styles.imgmodal2}></Image>
@@ -35,11 +36,21 @@ const BikeDetails = () => {
                 <Separator/>
                 <Separator/>
                 </View>
+                </View>
         </>
     );
 };
 
 const styles = StyleSheet.create({
+    modalboundary:{
+        marginTop:100,
+        marginBottom:400,
+        borderWidth:3,
+        borderColor:'#f0f0f0',
+        backgroundColor:'#fff',
+        borderRadius:45,
+        paddingBottom:90
+    },
     modal:{
         flex:0,
         alignItems:'center',

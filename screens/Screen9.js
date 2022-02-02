@@ -1,11 +1,13 @@
 import * as React from 'react';
-import { View, Image, StyleSheet, Text,TouchableOpacity,SafeAreaView,Modal} from 'react-native';
-import Date from './Date';
+import { View, Image, StyleSheet, Text,TouchableOpacity,SafeAreaView,Modal,BackHandler} from 'react-native';
+import Date from '../components/others/Date';
+import Confirmation from '../components/modals/Confirmation';
 import {useState} from 'react';
 import { StylesContext } from '@material-ui/styles';
+import { useFocusEffect,useNavigation } from '@react-navigation/native';
 
-const Screen9 = ({navigation}) => {
-
+const Screen9 = (props) => {
+  const navigation = useNavigation();
   const [showModal,setShowModal] = useState(false);
 
     const Separator = () => (
@@ -13,13 +15,29 @@ const Screen9 = ({navigation}) => {
         <View style={styles.separator} />
       );
 
+      useFocusEffect(
+        React.useCallback(() => {
+            const onBackPress = () => {
+               //alert('Back Press handled and doing no action');
+               'hardwareBackPress',
+                onBackPress
+            };
+            BackHandler.addEventListener(
+                'hardwareBackPress',
+                onBackPress
+            );
+        },[]),
+    );
+
     return (
         <>
         <SafeAreaView >
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../components/images/back.png')} 
-            onPress={() => navigation.navigate('Screen4')}/>
+          <TouchableOpacity
+             onPress={() => props.navigation.goBack()}>
+            <Image style={styles.direct} source={require('../components/images/back.png')}/>
+            </TouchableOpacity>
             <Text style={styles.txt1}
             onPress={() => navigation.navigate('Screen10')}> Cleaning Control </Text>
             <Separator/>
@@ -166,29 +184,11 @@ const Screen9 = ({navigation}) => {
         </SafeAreaView>
         </View>
 
-        <SafeAreaView style={styles.safearea}>        
+      <SafeAreaView style={styles.safearea}>        
        <View style={StylesContext.container}>
-           <Modal animationType={'slide'} transparent={false} visible={showModal}
+           <Modal animationType={'fade'} transparent={true} visible={showModal}
                   onRequestClose={() =>{ console.log('Modal has been closed.');}}>
-            <View style={styles.modal}>
-            <Text style={styles.txtmodal1}>Confirmation </Text>
-                <Text style={styles.txtmodal2}>General Servicing</Text>
-                <Text style={styles.txtmodal3}>of Harley Davidson SQ 12345</Text>
-                <Text style={styles.txtmodal4}>11:30 AM, 19th Sep2021.</Text>
-                <Text style={styles.txtmodal5}>at</Text>
-                <TouchableOpacity style={styles.to1} onPress={() => navigation.navigate('Screen10')} >
-              <Text style={styles.txtmodal6}>Continue</Text>
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.to2} onPress={() => { setShowModal(!showModal);}}>
-              <Text style={styles.txtmodal7}>Cancel</Text>
-              </TouchableOpacity>
-
-                <Separator/>
-                <Separator/>
-                <Separator/>
-                <Separator/>
-                <Separator/>
-                </View>
+            <Confirmation/>
             </Modal>
        </View>
       </SafeAreaView>

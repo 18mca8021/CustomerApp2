@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { View, Image, StyleSheet, Text,TouchableOpacity,SafeAreaView,BackHandler} from 'react-native';
-import UploadImage from './UploadImage';
+import UploadImage from '../components/others/UploadImage';
 import { useFocusEffect,useNavigation } from '@react-navigation/native';
 
 const Screen8 = (props) => {

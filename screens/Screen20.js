@@ -1,22 +1,39 @@
+import { useNavigation,useFocusEffect } from '@react-navigation/native';
 import * as React from 'react';
-import { View, Image, StyleSheet, Text,TouchableOpacity,SafeAreaView,} from 'react-native';
+import { View, Image, StyleSheet, Text,TouchableOpacity,SafeAreaView,BackHandler} from 'react-native';
 
-const Screen20 = ({navigation}) => {
-
+const Screen20 = (props) => {
+  const navigation = useNavigation();
 
     const Separator = () => (
       
         <View style={styles.separator} />
       );
 
+      useFocusEffect(
+        React.useCallback(() => {
+            const onBackPress = () => {
+               //alert('Back Press handled and doing no action');
+               'hardwareBackPress',
+                onBackPress
+            };
+            BackHandler.addEventListener(
+                'hardwareBackPress',
+                onBackPress
+            );
+        },[]),
+    );  
+
     return (
         <>
         <SafeAreaView >
         <View>
           <View style={styles.bg1}>
-            <Image style={styles.direct} source={require('../components/images/back.png')} 
-            onPress={() => navigation.navigate('Screen4')}/>
-            <Text style={styles.txt1} onPress={() => navigation.navigate('Screen10')}> #13542 </Text>
+          <TouchableOpacity
+             onPress={() => props.navigation.goBack()}>
+            <Image style={styles.direct} source={require('../components/images/back.png')}/>
+          </TouchableOpacity> 
+            <Text style={styles.txt1} onPress={() => navigation.navigate('Screen21')}> #13542 </Text>
             <Separator/>
             </View>
             <View style={styles.bg1}>

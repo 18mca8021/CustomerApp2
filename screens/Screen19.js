@@ -1,11 +1,26 @@
+import { useNavigation,useFocusEffect } from '@react-navigation/native';
 import * as React from 'react';
-import { View, Image, StyleSheet, Text, TextInput, SafeAreaView, StatusBar } from 'react-native';
+import { View, Image, StyleSheet, Text, TextInput, SafeAreaView, StatusBar,BackHandler,TouchableOpacity } from 'react-native';
 
-const Screen19 = ({navigation}) => {
-
+const Screen19 = (props) => {
+  const navigation = useNavigation();
   const Separator = () => (
     <View style={styles.separator} />
   );
+
+  useFocusEffect(
+    React.useCallback(() => {
+        const onBackPress = () => {
+           //alert('Back Press handled and doing no action');
+           'hardwareBackPress',
+            onBackPress
+        };
+        BackHandler.addEventListener(
+            'hardwareBackPress',
+            onBackPress
+        );
+    },[]),
+);
 
   return (
     <>
@@ -13,7 +28,10 @@ const Screen19 = ({navigation}) => {
           <StatusBar backgroundColor='black' barStyle='light-content'/>
         <View>
           <View style={styles.bg1}>
+          <TouchableOpacity
+             onPress={() => props.navigation.goBack()}>
             <Image style={styles.direct} source={require('../components/images/back.png')}/>
+            </TouchableOpacity>
             <Text style={styles.txthead} 
             onPress={() => navigation.navigate('Screen20')}>FAQ's</Text>
             <Separator/>

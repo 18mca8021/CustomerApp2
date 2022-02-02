@@ -63,7 +63,10 @@ const Screen7 = (props) => {
           <Text style={styles.txt2item1}> S$ 39</Text>
           <Text style={styles.txt3item1}>/</Text>
           <Text style={styles.txt4item1}>day</Text>
+          <TouchableOpacity
+             onPress={() => {setShowModal(!showModal);}}>
           <Image source={require('../components/images/infoicon.png')} style={styles.img2item1}></Image>
+          </TouchableOpacity>
           <Image source={require('../components/images/separator2.png')} style={styles.sep1}></Image>
           </View>
 
@@ -104,7 +107,7 @@ const Screen7 = (props) => {
 
       <SafeAreaView style={styles.safearea}>        
        <View style={StylesContext.container}>
-           <Modal  animationType={'slide'} transparent={false} visible={showModal} onRequestClose={() =>{ console.log('Modal has been closed.');}}>
+           <Modal  animationType={'slide'} transparent={true} visible={showModal} onRequestClose={() =>{ console.log('Modal has been closed.');}}>
             <BikeDetails/>
             </Modal>
        </View>

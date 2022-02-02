@@ -9,7 +9,7 @@ const Screen16 = ({navigation}) => {
 
     return (
         <>
-        <SafeAreaView >
+        <SafeAreaView height={1000}>
         <ScrollView>
         <Separator/>
         <Separator/>
@@ -33,7 +33,10 @@ const Screen16 = ({navigation}) => {
         <Text style={styles.txt3}>Profile</Text>
         <Image style={styles.imglogo1} source={require('../components/images/bikeicon.png')}/>      
         <Text style={styles.txt4}>My Bikes</Text>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Screen17')}>
         <Image style={styles.imgicon1} source={require('../components/images/forward2.png')}/>
+        </TouchableOpacity>
         <Image source={require('../components/images/separator2.png')} style={styles.sep1}/>
       </View>
 

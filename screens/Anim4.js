@@ -97,9 +97,6 @@ const bgImage = require('../components/images/orizonbig.png');
             onRequestClose={() =>{ console.log('Modal has been closed.');}}>
         <Signup/>   
        </Modal>
-       {/*<Pressable style={{display:'flex',height:60,borderRadius:6,backgroundColor:'#009688'}} onPress={() =>{setShowModal(!showModal);}}>
-         <Text style={{fontSize:22,fontWeight:'bold'}}>open modal</Text>
-       </Pressable>*/}
       </View>
     </SafeAreaView>
 
