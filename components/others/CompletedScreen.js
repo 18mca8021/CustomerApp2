@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { View, StyleSheet, Text, TouchableOpacity,SafeAreaView,StatusBar,ScrollView,Image} from 'react-native';
 
-const Screen15 = ({navigation}) => {
+const CompletedScreen = ({navigation}) => {
 
     const Separator = () => (
         <View style={styles.separator} />
@@ -15,33 +15,58 @@ const Screen15 = ({navigation}) => {
         <Separator/>
 
         <StatusBar backgroundColor='#f0f0f0' barStyle='dark-content'/>
-        
-        <View style={styles.view1}>
- 
-        <Text style={styles.txt1} onPress={() => navigation.navigate('OngoingScreen')}>Ongoing</Text>
-        <Text style={styles.txt2} onPress={() => navigation.navigate('CompletedScreen')}>Completed</Text>
-        <View style={styles.fixToText}>
-            <TouchableOpacity style={styles.appButtonContainer1}
-            onPress={() => navigation.navigate('UpcomingScreen')}>
-        <Text style={styles.appButtonText1}>Upcoming</Text>  
-        </TouchableOpacity>
-        </View>
-        </View>
          
-        
-        <View style={styles.view2}>
+        <View style={styles.view8}>
          <Text style={styles.txt3}>#13542</Text>
-         <View style={styles.view3}/>
-         <Text style={styles.txt4}>Accepted</Text>
-         <Text style={styles.txt5}>General Service</Text>
+         <View style={styles.view9}/>
+         <Text style={styles.txt9}>Completed</Text>
+         <Text style={styles.txt5}>Bike Wash</Text>
          <Text style={styles.txt6}>25 Nov 21, 03:00 - 4:30 PM</Text>
          <Text style={styles.txt7}>$ 169</Text>
          <View style={styles.fixToText}>
-            <TouchableOpacity style={styles.appButtonContainer2} 
-            onPress={() => navigation.navigate('Screen16')}>
-        <Text style={styles.appButtonText2}>Cancel Booking</Text>  
+            <TouchableOpacity style={styles.appButtonContainer5} 
+            onPress={() => navigation.navigate('Screen15')}>
+        <Text style={styles.appButtonText5}>Share Feedback</Text>  
         </TouchableOpacity>
         </View>
+        </View>
+
+        <View style={styles.view10}>
+         <Text style={styles.txt3}>#13542</Text>
+         <View style={styles.view11}/>
+         <Text style={styles.txt9}>Completed</Text>
+         <Text style={styles.txt5}>Bike Wash</Text>
+         <Text style={styles.txt6}>25 Nov 21, 03:00 - 4:30 PM</Text>
+         <Text style={styles.txt7}>$ 169</Text>
+         <Image style={styles.img1} source={require('../images/star1.png')}/>
+         <Image style={styles.img2} source={require('../images/star1.png')}/>
+         <Image style={styles.img3} source={require('../images/star1.png')}/>
+         <Image style={styles.img4} source={require('../images/star1.png')}/>
+         <Image style={styles.img5} source={require('../images/star2.png')}/>
+         <View style={styles.fixToText}>
+            <TouchableOpacity style={styles.appButtonContainer6} 
+            onPress={() => navigation.navigate('Screen11')}>
+        <Text style={styles.appButtonText6}>Proceed to payment</Text>  
+        </TouchableOpacity>
+        </View>
+        </View>
+
+        <View style={styles.view12}>
+         <Text style={styles.txt3}>#13542</Text>
+         <View style={styles.view13}/>
+         <Text style={styles.txt10}>Cancelled</Text>
+         <Text style={styles.txt5}>Bike Wash</Text>
+         <Text style={styles.txt6}>25 Nov 21, 03:00 - 4:30 PM</Text>
+         <Text style={styles.txt7}>$ 169</Text>
+        </View>
+
+        <View style={styles.view14}>
+         <Text style={styles.txt3}>#13542</Text>
+         <View style={styles.view15}/>
+         <Text style={styles.txt11}>No Show</Text>
+         <Text style={styles.txt5}>Bike Wash</Text>
+         <Text style={styles.txt6}>25 Nov 21, 03:00 - 4:30 PM</Text>
+         <Text style={styles.txt7}>$ 169</Text>
         </View>
 
         
@@ -585,4 +610,4 @@ txt11:{
 
 });
 
-export default Screen15;
+export default CompletedScreen;

@@ -24,7 +24,10 @@ import App from './App';
 //import Backbutton from './screens/Backbutton';
 //import Anim4 from './screens/Anim4';
 //import OtpScreen from './components/others/otp/OtpScreen';
-
+//import SliderButtons from './screens/SliderButtons';
+//import UpcomingScreen from './components/others/UpcomingScreen';
+//import OngoingScreen from './components/others/OngoingScreen';
+//import CompletedScreen from './components/others/CompletedScreen';
 
 const index = () => {
     return (

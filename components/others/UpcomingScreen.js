@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { View, StyleSheet, Text, TouchableOpacity,SafeAreaView,StatusBar,ScrollView,Image} from 'react-native';
 
-const Screen15 = ({navigation}) => {
+const UpcomingScreen = ({navigation}) => {
 
     const Separator = () => (
         <View style={styles.separator} />
@@ -15,18 +15,6 @@ const Screen15 = ({navigation}) => {
         <Separator/>
 
         <StatusBar backgroundColor='#f0f0f0' barStyle='dark-content'/>
-        
-        <View style={styles.view1}>
- 
-        <Text style={styles.txt1} onPress={() => navigation.navigate('OngoingScreen')}>Ongoing</Text>
-        <Text style={styles.txt2} onPress={() => navigation.navigate('CompletedScreen')}>Completed</Text>
-        <View style={styles.fixToText}>
-            <TouchableOpacity style={styles.appButtonContainer1}
-            onPress={() => navigation.navigate('UpcomingScreen')}>
-        <Text style={styles.appButtonText1}>Upcoming</Text>  
-        </TouchableOpacity>
-        </View>
-        </View>
          
         
         <View style={styles.view2}>
@@ -38,7 +26,7 @@ const Screen15 = ({navigation}) => {
          <Text style={styles.txt7}>$ 169</Text>
          <View style={styles.fixToText}>
             <TouchableOpacity style={styles.appButtonContainer2} 
-            onPress={() => navigation.navigate('Screen16')}>
+            onPress={() => navigation.navigate('Screen15')}>
         <Text style={styles.appButtonText2}>Cancel Booking</Text>  
         </TouchableOpacity>
         </View>
@@ -585,4 +573,4 @@ txt11:{
 
 });
 
-export default Screen15;
+export default UpcomingScreen;

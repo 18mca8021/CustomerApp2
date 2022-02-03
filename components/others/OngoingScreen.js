@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { View, StyleSheet, Text, TouchableOpacity,SafeAreaView,StatusBar,ScrollView,Image} from 'react-native';
 
-const Screen15 = ({navigation}) => {
+const OngoingScreen = ({navigation}) => {
 
     const Separator = () => (
         <View style={styles.separator} />
@@ -15,35 +15,36 @@ const Screen15 = ({navigation}) => {
         <Separator/>
 
         <StatusBar backgroundColor='#f0f0f0' barStyle='dark-content'/>
-        
-        <View style={styles.view1}>
- 
-        <Text style={styles.txt1} onPress={() => navigation.navigate('OngoingScreen')}>Ongoing</Text>
-        <Text style={styles.txt2} onPress={() => navigation.navigate('CompletedScreen')}>Completed</Text>
-        <View style={styles.fixToText}>
-            <TouchableOpacity style={styles.appButtonContainer1}
-            onPress={() => navigation.navigate('UpcomingScreen')}>
-        <Text style={styles.appButtonText1}>Upcoming</Text>  
-        </TouchableOpacity>
-        </View>
-        </View>
          
-        
-        <View style={styles.view2}>
+        <View style={styles.view4}>
          <Text style={styles.txt3}>#13542</Text>
-         <View style={styles.view3}/>
-         <Text style={styles.txt4}>Accepted</Text>
-         <Text style={styles.txt5}>General Service</Text>
+         <View style={styles.view5}/>
+         <Text style={styles.txt8}>Ongoing</Text>
+         <Text style={styles.txt5}>Break oil top up</Text>
          <Text style={styles.txt6}>25 Nov 21, 03:00 - 4:30 PM</Text>
          <Text style={styles.txt7}>$ 169</Text>
          <View style={styles.fixToText}>
-            <TouchableOpacity style={styles.appButtonContainer2} 
-            onPress={() => navigation.navigate('Screen16')}>
-        <Text style={styles.appButtonText2}>Cancel Booking</Text>  
+            <TouchableOpacity style={styles.appButtonContainer3} 
+            onPress={() => navigation.navigate('Screen15')}>
+        <Text style={styles.appButtonText3}>Call Service Station</Text>  
         </TouchableOpacity>
         </View>
         </View>
 
+        <View style={styles.view6}>
+         <Text style={styles.txt3}>#13542</Text>
+         <View style={styles.view7}/>
+         <Text style={styles.txt8}>Ongoing</Text>
+         <Text style={styles.txt5}>Break oil top up</Text>
+         <Text style={styles.txt6}>25 Nov 21, 03:00 - 4:30 PM</Text>
+         <Text style={styles.txt7}>$ 169</Text>
+         <View style={styles.fixToText}>
+            <TouchableOpacity style={styles.appButtonContainer4} 
+            onPress={() => navigation.navigate('Screen15')}>
+        <Text style={styles.appButtonText4}>Confirm Job Updates</Text>  
+        </TouchableOpacity>
+        </View>
+        </View>
         
         <Separator/>
         <Separator/>
@@ -585,4 +586,4 @@ txt11:{
 
 });
 
-export default Screen15;
+export default OngoingScreen;
