@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppRegistry } from 'react-native';  
 import {name as appName} from './app.json';
-import App from './App';
+//import App from './App';
 //import OtpScreen2 from './components/others/otp/OtpScreen2';
 //import Anim3 from './screens/Anim3';
 //import Screen16 from './screens/Screen16';
@@ -13,7 +13,7 @@ import App from './App';
 //import Screen8 from './screens/Screen8';
 //import Model from './screens/Model';
 //import Radio from './screens/Radio';
-//import BottomNav from './screens/BottomNav';
+import BottomNav from './screens/BottomNav';
 //import Appp from './Appp';
 //import UploadImage from './components/others/UploadImage';
 //import Gradient from './screens/Gradient';
@@ -28,10 +28,11 @@ import App from './App';
 //import UpcomingScreen from './components/others/UpcomingScreen';
 //import OngoingScreen from './components/others/OngoingScreen';
 //import CompletedScreen from './components/others/CompletedScreen';
+//import LoanScreen from './components/others/LoanScreen';
 
 const index = () => {
     return (
-    <App/>
+    <BottomNav/>
     );
 };
 

@@ -34,6 +34,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import BottomNav from './screens/BottomNav';
 import { Tabs } from '@material-ui/core';
+import LoanScreen from './components/others/LoanScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -64,7 +65,9 @@ export  default function App(){
         <Stack.Screen name="Screen20" component={Screen20} options={{headerShown:false}}/>
         <Stack.Screen name="Screen21" component={Screen21} options={{headerShown:false}}/>
         <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>  
-        
+
+        <Stack.Screen name="BottomNav" component={BottomNav} options={{headerShown:false}}/>
+        <Stack.Screen name="LoanScreen" component={LoanScreen} options={{headerShown:false}}/>
         <Stack.Screen name="Secondscreen" component={Secondscreen} options={{headerShown:false}}/>  
         <Stack.Screen name="SliderButtons" component={SliderButtons} options={{headerShown:false}}/>
         <Stack.Screen name="UpcomingScreen" component={UpcomingScreen} options={{headerShown:false}}/>

@@ -3,6 +3,9 @@ import { Text, View,Image } from 'react-native';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/HomeScreen';
+import Screen14 from '../screens/Screen14';
+import Screen16 from '../screens/Screen16';
+import LoanScreen from '../components/others/LoanScreen';
 
 function Home({navigation}) {
   
@@ -15,24 +18,24 @@ function Home({navigation}) {
 
 function Profile() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Profile!</Text>
+    <View >
+      <Screen16/>
     </View>
   );
 }
 
 function Loan() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Loan!</Text>
+    <View>
+      <LoanScreen/>
     </View>
   );
 }
 
 function Bookings() {
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Bookings!</Text>
+      <View >
+        <Screen14/>
       </View>
     );
   }
@@ -48,7 +51,7 @@ function MyTabs() {
         headerShown:false,
         tabBarActiveBackgroundColor:'#f2994a',
         tabBarInactiveTintColor:'grey',
-        
+        tabBarHideOnKeyboard:true
       }} 
     >
       <Tab.Screen

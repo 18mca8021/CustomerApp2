@@ -9,7 +9,7 @@ const Screen16 = ({navigation}) => {
 
     return (
         <>
-        <SafeAreaView height={1000}>
+        <SafeAreaView height={950}>
         <ScrollView>
         <Separator/>
         <Separator/>
