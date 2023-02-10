@@ -2,12 +2,19 @@ import * as React from 'react';
 import { View, Image, StyleSheet, Text,TouchableOpacity,SafeAreaView,BackHandler} from 'react-native';
 import UploadImage from '../components/others/UploadImage';
 import { useFocusEffect,useNavigation } from '@react-navigation/native';
+import DatePicker from 'react-native-neat-date-picker';
+import Moment from 'moment';
 
 const Screen8 = (props) => {
   const navigation = useNavigation();
     const Separator = () => (
         <View style={styles.separator} />
       );
+
+  const [showDatePickers, setShowDatePickers] = React.useState(false);
+  const openDatePickers = () => { setShowDatePickers(true) }
+  const onCancels = () => { setShowDatePickers(false) }
+  const [dateofbirth, setDateOfBirth] = React.useState([]);
 
       useFocusEffect(
         React.useCallback(() => {
@@ -42,10 +49,16 @@ const Screen8 = (props) => {
         <View style={styles.bg2}>
           <View>
           <Text style={styles.txt2}>Last Service Date</Text>
-          <Text style={styles.txt3}> --/--/----</Text>
-          <Image style={styles.img1} source={require('../components/images/calendar.png')}/> 
+          {/* <Text style={styles.txt3}> --/--/----</Text> */}
+          <Text style={styles.txt3}> {Moment(dateofbirth).format('DD/MM/YYYY')} </Text>
+
+          <TouchableOpacity onPress={openDatePickers}>
+            <Image style={styles.img1} source={require('../components/images/calendar.png')} />
+          </TouchableOpacity>
+          <DatePicker isVisible={showDatePickers} mode={'single'} onCancel={onCancels}
+          onConfirm={(dob) => { setShowDatePickers(false); setDateOfBirth(dob.dateString) }} />
+
           <Image source={require('../components/images/separator2.png')} style={styles.sep1}></Image>
-          
 
           <Text style={styles.txt4}>Last oil change mileage</Text>
           <Text style={styles.txt5}> 123456 KM </Text> 
